@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="web-name">Dev<b>Cal</b></h1>
+        <div id="head-nav">
+            <nav>
+                <a href="index.html" class="head-nav-bar">Home</a><a href="#" class="head-nav-bar">Blog</a><a href="#"
+                    class="head-nav-bar">About</a><a href="#" class="head-nav-bar">Contact</a>
+            </nav>
+        </div>
+        <div id="subscribe">
+            <a href="#footer" style="color:white; text-decoration: none;">
+                Subscribe
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="main-1">
+            <p class="subtitle">Welcome to <br>
+                <c>Dev<b>Cal</b></c>
+            </p>
+            <p class="subtitle" style="text-transform: uppercase;">My blog on studying mathematics</p>
+            <nav id="main-nav">
+                <a href="#recent-problems" class="main-a"><img src="img/icon/problem.svg" class="main-1-icon"><br>Daily
+                    Problems</a><a href="#tech-math" class="main-a"><img src="img/icon/calculator.svg"
+                        class="main-1-icon"><br>Tech Math</a><a href="#math-innovation" class="main-a"
+                    id="main-nav-last-a"><img src="img/icon/innovation.svg" class="main-1-icon"><br>Math Tips and
+                    Innovations</a>
+            </nav>
+        </div>
+        <div id="main-featured" class="main-background-blue">
+            <div class="main-title">Featured <br>Post</div>
+            <div class="small-underline"></div>
+            <div class="main-post">
+                <div class="background-main-post" id="main-head-post"></div>
+                <div class="summarize-main-post">
+                    <a href="#" class="main-post-link">
+                        <h2 class="main-post-h2">Is there creativity in mathematics?</h2>
+                    </a>
+                    <p class="summarize-main-post-short">
+                        When people think about maths, they often think about repetitive equations or difficult
+                        geometry. Read the post to find if these are the only parts of mathematic.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="main-recent" class="main-background-light-blue">
+            <div class="main-title">Recent <br> Posts</div>
+            <div class="small-underline"></div>
+            <ul class="sub-post-container">
+                <li class="sub-post" id="sub-post-1">
+                    <div class="sub-post-picture" id="picture-1"></div>
+                    <a href="#">
+                        <h2 class="sub-post-h2">Does learning online work?</h2>
+                    </a>
+                </li>
+                <li class="sub-post" id="sub-post-2">
+                    <div class="sub-post-picture" id="picture-2"></div>
+                    <a href="#">
+                        <h2 class="sub-post-h2">Is there creativity in mathematics?</h2>
+                    </a>
+                </li>
+                <li class="sub-post">
+                    <div class="sub-post-picture" id="picture-3"></div>
+                    <a href="#">
+                        <h2 class="sub-post-h2">Tools you will need when learning maths.</hh2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="recent-problems" class="main-background-blue">
+            <div class="main-title">Daily <br> Problems</div>
+            <div class="small-underline"></div>
+            <div class="main-post">
+                <div class="background-main-post" id="main-daily-problem-post"></div>
+                <div class="summarize-main-post">
+                    <a href="#">
+                        <h2 class="main-post-h2">AM-GM Inequality</h2>
+                    </a>
+                    <p class="summarize-main-post-short">
+                        Let's look at one of the most famous inequalities in algebra by building a steel box.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="quote" class="main-background-light-blue">
+            <p id="main-quote"><br><b>Mathematics</b> is not about <i>numbers, equations, computations,</i> or
+                <i>algorithms</i>. It is about <b>understanding.</b></p>
+            <p id="quote-author">/ William Paul Thurston</p>
+        </div>
+        <div id="tech-math" class="main-background-blue">
+            <div class="main-title">Tech <br>Math</div>
+            <div class="small-underline"></div>
+            <div class="main-post">
+                <div class="background-main-post" id="main-tech-post"></div>
+                <div class="summarize-main-post">
+                    <a href="#">
+                        <h2 class="main-post-h2">How to use the calculator effectively?</h2>
+                    </a>
+                    <p class="summarize-main-post-short">
+                        The calculator has been around for more than three centuries. There have been many modifications
+                        to this old device, however the main mechanic is still the same.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="math-innovation" class="main-background-light-blue">
+            <div class="main-title">Math Tips <br>And Innovation</div>
+            <div class="small-underline"></div>
+            <div class="main-post">
+                <div class="background-main-post" id="main-innovation-post"></div>
+                <div class="summarize-main-post">
+                    <a href="#">
+                        <h2 class="main-post-h2 black">Is there creativity in mathematics?</h2>
+                    </a>
+                    <p class="summarize-main-post-short">
+                        When people think about maths, they often think about repetitive equations or difficult
+                        geometry. Read the post to find if these are the only parts of mathematic.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p class="footer-title">Subscribe to DevCal newsletter</p>
+        <p class="footer-detail">Get our weekly math tips and problems with solutions. Good luck on your way of become a
+            great mathematician!</p>
+        <form class="footer-form">
+            <label for="email">Email*:</label><br>
+            <div class="form-control">
+                <input class="form-input" type="email" name="email" placeholder="Your awesome email">
+                <input class="form-button" type="submit" value="Subscribe">
+            </div>
+        </form>
+    </footer>
+</body>
+
+</html>

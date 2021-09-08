@@ -1,0 +1,269 @@
+/* Main title */
+
+#main-1 {
+    background: url("../img/background/whiteboard-with-formulas.jpg") right / cover no-repeat #426cf3;
+    background-blend-mode: multiply;
+    padding: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+#main-1 p c {
+    line-height: 70px;
+    font-size: 50px;
+}
+
+#main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-a {
+    width: 40%;
+    min-height: 100px;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: white;
+    text-align: center;
+}
+
+#main-nav-last-a {
+    flex-grow: 1;
+}
+
+/* #FF2736 */
+
+.main-1-icon {
+    width: 60px;
+    margin: 10px;
+}
+
+/* Featured Post */
+
+.main-background-blue {
+    background: #0332cb;
+    padding: 50px 20px;
+    color: white;
+}
+
+
+.main-title {
+    margin: 20px 0 15px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+.small-underline {
+    width: 60px;
+    height: 5px;
+    background: #ff3644;
+    margin-bottom: 20px;
+}
+
+.background-main-post {
+    width: 100%;
+    height: 200px;
+}
+
+#main-head-post {
+    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
+}
+
+.summarize-main-post {
+    min-height: 200px;
+    padding: 30px 20px;
+    border-bottom: 1px solid #385dd2;
+}
+
+.main-post-h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.main-post-h2:active {
+    color: #ff3644;
+}
+
+.summarize-main-post-short {
+    font-size: 14px;
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+
+/* Recent Posts */
+
+.main-background-light-blue {
+    padding: 50px 20px;
+    background: #cfdefc;
+}
+
+
+.sub-post {
+    width: 100%;
+    margin: 30px 0;
+    background-color: white;
+}
+
+.sub-post-picture {
+    width: 100%;
+    height: 200px;
+}
+
+.sub-post-h2 {
+    width: 90%;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px;
+    margin: 0 auto 25px;
+    border-bottom: 1px solid gray;
+}
+
+.sub-post-h2:active {
+    color: #ff3644;
+}
+
+
+#picture-1 {
+    background: url('../img/background/online-teaching.jpg') center / cover no-repeat;
+}
+
+#picture-2 {
+    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
+}
+
+#picture-3 {
+    background: url('../img/background/math-tools.jpg') center / cover no-repeat;
+}
+
+/* Daily problem */
+
+#main-daily-problem-post {
+    background: url('../img/background/am-gm-inequality.png') center / cover no-repeat;
+}
+
+/* Quote */
+
+#main-quote {
+    margin-top: -50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#main-quote::before {
+    content: '\2E42';
+    color: #ff3644;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+#quote-author {
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Tech maths */
+
+#main-tech-post {
+    background: url('../img/background/calculator.jpg') center / cover no-repeat;
+}
+
+/* Math tips and innovations */
+
+#main-innovation-post {
+    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
+}
+
+/* Computer Screen */
+
+@media screen and (min-width: 768px) {
+
+    /* Main title */
+    #main-1 {
+        padding: 100px;
+    }
+
+    #main-nav {
+        width: 70%;
+        margin: 25px auto;
+    }
+
+    #main-nav-last-a {
+        flex-grow: 0;
+    }
+
+    .main-a {
+        width: 30%;
+        padding: 50px 0;
+    }
+
+    /* Featured Post */
+    .main-background-blue {
+        padding: 100px 200px 150px;
+    }
+
+    .main-post {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-title {
+        font-size: 50px;
+    }
+
+    .background-main-post {
+        width: 50%;
+        height: 300px;
+    }
+
+    .summarize-main-post {
+        width: 45%;
+    }
+
+    .main-post-h2 {
+        font-size: 30px;
+        transition: 0.5s;
+    }
+
+    .main-post-h2:hover {
+        color: #ff3644;
+    }
+
+    .summarize-main-post-short {
+        font-size: 17px;
+    }
+
+    /* Recent Posts */
+
+    .main-background-light-blue {
+        padding: 100px 200px 150px;
+    }
+
+    .sub-post-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub-post {
+        width: 31%;
+    }
+    .sub-post-h2 {
+        font-size: 20px;
+    }
+}
+
+/* Extra classes */
+
+.black {
+    color: black;
+}

@@ -1,0 +1,164 @@
+/* Normalize */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header */
+
+header {
+    background: #0332cb;
+}
+
+header h1 {
+    padding: 30px 0 20px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#head-nav {
+    padding: 10px;
+}
+
+#head-nav nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-nav-bar {
+    color: white;
+    text-transform: uppercase;
+}
+
+.head-nav-bar:active {
+    color: #ff3644;
+}
+
+#subscribe {
+    width: 100%;
+    background: #ff3644;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+footer {
+    padding: 10px 0;
+    background: #000e3b;
+    color: white;
+}
+
+.footer-title {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-detail {
+    padding: 20px;
+    text-align: justify;
+}
+
+.footer-form {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    background: #0332cb;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Computer Screen */
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        padding: 0 100px;
+    }
+
+    header h1 {
+        padding: 25px 0;
+    }
+
+    #web-name {
+        margin-right: auto;
+    }
+
+    #head-nav nav {
+        height: 100%;
+        align-items: center;
+    }
+
+    .head-nav-bar {
+        margin: 0 20px;
+        transition: 0.5s;
+    }
+
+    .head-nav-bar:hover {
+        color: #ff3644;
+    }
+
+    #subscribe {
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+
+    footer {
+        padding: 150px 200px;
+    }
+
+    .form-control {
+        display: flex;
+        background: white;
+        border-radius: 30px;
+        margin: 10px 0;
+    }
+
+    .footer-form {
+        width: 70%;
+    }
+
+    .form-input {
+        height: 30px;
+    }
+
+    .form-button {
+        width: 25%;
+        height: 30px;
+        padding: 0;
+        margin: 10px;
+    }
+}
