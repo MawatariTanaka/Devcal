@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/blog.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1 id="web-name">Dev<b>Cal</b></h1>
+        <div id="head-nav">
+            <nav>
+                <a href="index.html" class="head-nav-bar">Home</a><a href="blog.html" class="head-nav-bar">Blog</a><a
+                    href="#" class="head-nav-bar">About</a><a href="#" class="head-nav-bar">Contact</a>
+            </nav>
+        </div>
+        <div id="subscribe">
+            <a href="#footer" style="color:white; text-decoration: none;">
+                Subscribe
+            </a>
+        </div>
+    </header>
+    <main>
+        <select id="blog-category">
+            <option value="all-posts">All Posts</option>
+            <option value="recent-problems">Daily Problems</option>
+            <option value="tech-math">Tech Maths</option>
+            <option value="math-innovation">Math Tips and Innovations</option>
+        </select>
+        <div class="blog-container">
+            <div class="blog-child" id="blog-1">
+                <div class="blog-background" id="blog-pic-1"></div>
+                <div class="blog-text">
+                    <h2 class="blog-h2">Is there creativity in mathematics?</h2>
+                    <p class="blog-summary">When people think about maths, they often think about repetitive equations
+                        or difficult geometry. Read the post to find if these are the only parts of mathematic.</p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-child" id="blog-2">
+                <div class="blog-background" id="blog-pic-2"></div>
+                <div class="blog-text">
+                    <h2 class="blog-h2">AM-GM Inequality</h2>
+                    <p class="blog-summary">Let's look at one of the most famous inequalities in algebra by building a
+                        steel box.</p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-child" id="blog-3">
+                <div class="blog-background" id="blog-pic-3"></div>
+                <div class="blog-text">
+                    <h2 class="blog-h2">How to use the calculator effectively?</h2>
+                    <p class="blog-summary">The calculator has been around for more than three centuries. There have
+                        been many modifications
+                        to this old device, however the main mechanic is still the same.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p class="footer-title">Subscribe to DevCal newsletter</p>
+        <p class="footer-detail">Get our weekly math tips and problems with solutions. Good luck on your way of become a
+            great mathematician!</p>
+        <form class="footer-form">
+            <label for="email">Email*:</label><br>
+            <div class="form-control">
+                <input class="form-input" type="email" name="email" placeholder="Your awesome email">
+                <input class="form-button" type="submit" value="Subscribe">
+            </div>
+        </form>
+    </footer>
 </body>
+
 </html>
