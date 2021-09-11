@@ -9,8 +9,12 @@ main {
     color: white;
 }
 
+.blog-nav-bar {
+    display: none;
+}
+
 .blog-container {
-    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
 
 .blog-child {
@@ -19,7 +23,7 @@ main {
 
 .blog-background {
     width: 100%;
-    height: 175px;
+    min-height: 175px;
 }
 
 .blog-text {
@@ -60,12 +64,21 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+    main {
+        padding: 100px 180px;
+    }
+
     #blog-category {
         display: none;
     }
 
-    main {
-        padding: 100px 180px;
+    .blog-nav-bar {
+        display: flex;
+    }
+
+    .blog-nav {
+        font-weight: 600;
+        margin: 0 60px 0 0;
     }
 
     .blog-container {
@@ -79,18 +92,23 @@ main {
     }
 
     .blog-background {
-        height: 300px;
+        min-height: 300px;
         width: 50%;
     }
 
     .blog-text {
-        width: 60%;
+        width: 40%;
         padding: 0 20px;
         margin: 50px 20px;
+    }
+
+    .blog-nav,
+    .blog-text {
         transition: color 0.5s;
     }
 
-    .blog-text:hover {
+    .blog-text:hover,
+    .blog-nav:hover {
         color: #ff3644;
     }
 

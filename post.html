@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/post.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <div id="head-nav">
             <nav>
                 <a href="index.html" class="head-nav-bar">Home</a><a href="blog.html" class="head-nav-bar">Blog</a><a
-                    href="post.html" class="head-nav-bar">About</a><a href="#" class="head-nav-bar">Contact</a>
+                    href="#" class="head-nav-bar">About</a><a href="#" class="head-nav-bar">Contact</a>
             </nav>
         </div>
         <div id="subscribe">
@@ -33,48 +33,17 @@
         </div>
     </header>
     <main>
-        <select id="blog-category">
-            <option value="all-posts">All Posts</option>
-            <option value="recent-problems">Daily Problems</option>
-            <option value="tech-math">Tech Maths</option>
-            <option value="math-innovation">Math Tips and Innovations</option>
-        </select>
         <div class="blog-nav-bar">
             <div class="blog-nav">All Posts</div>
             <div class="blog-nav">Daily Problems</div>
             <div class="blog-nav">Tech Maths</div>
             <div class="blog-nav">Math Tips and Innovations</div>
         </div>
-        <div class="blog-container">
-            <div class="blog-child" id="blog-1">
-                <div class="blog-background" id="blog-pic-1"></div>
-                <div class="blog-text">
-                    <h2 class="blog-h2">Is there creativity in mathematics?</h2>
-                    <p class="blog-summary">When people think about maths, they often think about repetitive equations
-                        or difficult geometry. Read the post to find if these are the only parts of mathematic.</p>
-                </div>
-            </div>
-        </div>
-        <div class="blog-container">
-            <div class="blog-child" id="blog-2">
-                <div class="blog-background" id="blog-pic-2"></div>
-                <div class="blog-text">
-                    <h2 class="blog-h2">AM-GM Inequality</h2>
-                    <p class="blog-summary">Let's look at one of the most famous inequalities in algebra by building a
-                        steel box.</p>
-                </div>
-            </div>
-        </div>
-        <div class="blog-container">
-            <div class="blog-child" id="blog-3">
-                <div class="blog-background" id="blog-pic-3"></div>
-                <div class="blog-text">
-                    <h2 class="blog-h2">How to use the calculator effectively?</h2>
-                    <p class="blog-summary">The calculator has been around for more than three centuries. There have
-                        been many modifications
-                        to this old device, however the main mechanic is still the same.</p>
-                </div>
-            </div>
+        <div id="selected-post">
+            <h2 id="selected-h2">Is there creativity in mathematics?</h2>
+            <p id="selected-summary">When people think about maths, they often think about repetitive equations
+                or difficult geometry. Read the post to find if these are the only parts of mathematic.</p>
+                <div id="selected-main-background"></div>
         </div>
     </main>
     <footer id="footer">

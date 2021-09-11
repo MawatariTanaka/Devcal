@@ -1,0 +1,71 @@
+main {
+    background-color: #cfdefc;
+}
+
+.blog-nav-bar {
+    display: none;
+}
+/* 
+#selected-post {
+    background: white;
+    padding: 100px;
+    margin: 50px 0;
+}
+
+#selected-h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#selected-summary {
+    font-weight: 400;
+}
+
+#selected-main-background {
+    width: 100%;
+    height: 500px;
+    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
+} */
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 100px 180px;
+    }
+
+    .blog-nav-bar {
+        display: flex;
+    }
+
+    .blog-nav {
+        font-weight: 600;
+        margin: 0 60px 0 0;
+        transition: color 0.25s;
+    }
+
+    .blog-nav:hover {
+        color: #ff3644;
+    }
+
+    #selected-post {
+        background: white;
+        padding: 100px;
+        margin: 50px 0;
+    }
+
+    #selected-h2 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    #selected-summary {
+        font-weight: 400;
+    }
+
+    #selected-main-background {
+        width: 100%;
+        height: 500px;
+        background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
+    }
+}

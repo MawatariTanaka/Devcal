@@ -84,16 +84,18 @@
     border-bottom: 1px solid #385dd2;
 }
 
+.summarize-main-post:active {
+    color: #ff3644;
+}
+
 .main-post-h2 {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 25px;
-    color: white;
+    color: inherit;
 }
 
-.main-post-h2:active {
-    color: #ff3644;
-}
+
 
 .summarize-main-post-short {
     font-size: 14px;
@@ -224,20 +226,21 @@
 
     .background-main-post {
         width: 50%;
-        height: 300px;
+        min-height: 300px;
     }
 
     .summarize-main-post {
         width: 45%;
+        transition: color 0.5s;
+    }
+
+    .summarize-main-post:hover {
+        color: #ff3644;
     }
 
     .main-post-h2 {
         font-size: 30px;
-        transition: 0.5s;
-    }
 
-    .main-post-h2:hover {
-        color: #ff3644;
     }
 
     .summarize-main-post-short {
@@ -254,16 +257,12 @@
         display: flex;
         justify-content: space-between;
     }
+
     .sub-post {
         width: 31%;
     }
+
     .sub-post-h2 {
         font-size: 20px;
     }
-}
-
-/* Extra classes */
-
-.black {
-    color: black;
 }
