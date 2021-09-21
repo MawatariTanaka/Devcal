@@ -74,10 +74,6 @@
     height: 200px;
 }
 
-#main-head-post {
-    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
-}
-
 .summarize-main-post {
     min-height: 200px;
     padding: 30px 20px;
@@ -126,23 +122,11 @@
     padding: 20px;
     margin: 0 auto 25px;
     border-bottom: 1px solid gray;
+    transition: color 0.5s;
 }
 
-.sub-post-h2:active {
+.sub-post-h2:hover, .sub-post-h2:active {
     color: #ff3644;
-}
-
-
-#picture-1 {
-    background: url('../img/background/online-teaching.jpg') center / cover no-repeat;
-}
-
-#picture-2 {
-    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
-}
-
-#picture-3 {
-    background: url('../img/background/math-tools.jpg') center / cover no-repeat;
 }
 
 /* Daily problem */
