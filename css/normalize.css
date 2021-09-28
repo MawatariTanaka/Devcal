@@ -392,3 +392,7 @@ i {
 }
 
 /* Custom normalize */
+
+* {
+    word-wrap: break-word;
+}

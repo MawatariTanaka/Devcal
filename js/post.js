@@ -1,3 +1,10 @@
+function moveBack(){
+    document.location.href = "../blog.html";
+}
+
+
+
+/////////////////////////////////////////
 //Slide show
 
 var slideIndex = 1;

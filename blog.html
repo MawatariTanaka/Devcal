@@ -40,48 +40,18 @@
             <option value="math-innovation">Math Tips and Innovations</option>
         </select>
         <div class="blog-nav-bar">
-            <div class="blog-nav">All Posts</div>
-            <div class="blog-nav">Daily Problems</div>
-            <div class="blog-nav">Tech Maths</div>
-            <div class="blog-nav">Math Tips and Innovations</div>
+            <div class="blog-nav" onclick="showPosts()">All Posts</div>
+            <div class="blog-nav" onclick="showSomePosts(problems)">Daily Problems</div>
+            <div class="blog-nav" onclick="showSomePosts(techs)">Tech Maths</div>
+            <div class="blog-nav" onclick="showSomePosts(innovations)">Math Tips and Innovations</div>
         </div>
-        <div class="blog-container">
-            <div class="blog-child" id="blog-1">
-                <div class="blog-background" id="blog-pic-1"></div>
-                <div class="blog-text">
-                    <h2 class="blog-h2">Is there creativity in mathematics?</h2>
-                    <p class="blog-summary">When people think about maths, they often think about repetitive equations
-                        or difficult geometry. Read the post to find if these are the only parts of mathematic.</p>
-                </div>
-            </div>
-        </div>
-        <div class="blog-container">
-            <div class="blog-child" id="blog-2">
-                <div class="blog-background" id="blog-pic-2"></div>
-                <div class="blog-text">
-                    <h2 class="blog-h2">AM-GM Inequality</h2>
-                    <p class="blog-summary">Let's look at one of the most famous inequalities in algebra by building a
-                        steel box.</p>
-                </div>
-            </div>
-        </div>
-        <div class="blog-container">
-            <div class="blog-child" id="blog-3">
-                <div class="blog-background" id="blog-pic-3"></div>
-                <div class="blog-text">
-                    <h2 class="blog-h2">How to use the calculator effectively?</h2>
-                    <p class="blog-summary">The calculator has been around for more than three centuries. There have
-                        been many modifications
-                        to this old device, however the main mechanic is still the same.</p>
-                </div>
-            </div>
-        </div>
+        <div id="all-blog-container"></div>
     </main>
     <footer id="footer">
         <p class="footer-title">Subscribe to DevCal newsletter</p>
         <p class="footer-detail">Get our weekly math tips and problems with solutions. Good luck on your way of become a
             great mathematician!</p>
-        <form class="footer-form">
+        <form class="footer-form">s
             <label for="email">Email*:</label><br>
             <div class="form-control">
                 <input class="form-input" type="email" name="email" placeholder="Your awesome email">
@@ -89,6 +59,8 @@
             </div>
         </form>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 
 </html>
