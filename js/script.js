@@ -89,7 +89,32 @@ var posts = [{
         mainPicSize: `cover`
     },
     subTitle: `Read the post to know what tools you will need when learn mathematics.`,
-    paragraph: ``
+    paragraph: `<h2 id="selected-h2">Tools you will need when learning maths.</h2>
+    <div id="selected-main-background"></div>
+    <p class="selected-paragraph">&emsp;Playing music requires an instrument. Marking artistic paintings need
+        colors and brushes. When learning mathematics, you only need a pen and some paper, however, you will
+        advance faster if you have these tools.</p>
+    <p class="selected-insight">Like every other subject, you need more advanced tools to move faster in the
+        field that you are researching.</p>
+    <p class="selected-paragraph bold">1. Rulers and compasses</p>
+    <img class="selected-img" src="img/post/p2/2.1.jpg">
+    <p class="selected-paragraph">&emsp;If you study geometry or graphs, you will need rulers. Not only straight
+        rulers, but you will also need protractors to measure angles, curve rulers to draw graphs. Moreover, the
+        compass will come in handy when you need to draw a circle.</p>
+    <p class="selected-paragraph bold"></p>
+    <p class="selected-paragraph bold">2. Mathematics softwares</p>
+    <img class="selected-img" src="img/post/p2/2.2.png">
+    <p class="selected-paragraph sub">Geogebra - A free software that help you discover new geometry.</p>
+    <img class="selected-img" src="img/post/p2/2.3.png">
+    <p class="selected-paragraph sub">Maple - A strong calculator and visualizer for maths.</p>
+    <p class="selected-paragraph">&emsp;Back in the day, people used to do tedious calculations by hand, which
+        can contain errors and take a lot of time. Nowadays, programs like Maple will do all that calculations
+        for you. Moreover, if you have trouble imagine shapes, Geometry can visualize them for you. Also, you
+        can create interactive models, especially for teachers which need aids to help their students.</p>
+    <p class="selected-paragraph bold">3. LaTeX</p>
+    <img class="selected-img" src="img/post/p2/2.4.png">
+    <p class="selected-paragraph">&emsp;Yes, you can type mathematics papers in Word, but if you don't know LaTeX, it will take more time to type the papers. LaTeX is like a simple programming language for maths typing. It allows shortcuts and decorations for your papers. Moreover, not every symbol and function in maths is supported by Word but can be incorporated using LaTeX. Taking time to learn LaTeX will help you from wasting time finding symbols from the Internet to copy and paste that into your papers.
+    </p>`
 }, {
     id: 3,
     title: `AM-GM Inequality`,
