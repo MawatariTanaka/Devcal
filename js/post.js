@@ -1,11 +1,18 @@
+/// Post control
+
 function moveBack(){
     document.location.href = "../blog.html";
 }
 
+function postControl(n){
+    document.getElementById("selected-post").innerHTML = posts[n].paragraph;
+    document.getElementById("selected-h2").innerHTML = posts[n].title;
+    changeBackground(document.getElementById("selected-main-background"), n);
+}
 
+//postControl(window.localStorage.getItem('postId'));
 
-/////////////////////////////////////////
-//Slide show
+/// Slide show
 
 var slideIndex = 1;
 showSlides(slideIndex);
