@@ -10,7 +10,7 @@ function postControl(n){
     changeBackground(document.getElementById("selected-main-background"), n);
 }
 
-//postControl(window.localStorage.getItem('postId'));
+postControl(window.localStorage.getItem('postId'));
 
 /// Slide show
 

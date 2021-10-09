@@ -124,7 +124,7 @@ var posts = [{
         mainPicPosition: `center`,
         mainPicSize: `cover`
     },
-    subTitle: `Let's look at one of the most famous inequalities in algebra by building a steel box.`,
+    subTitle: `Let's look at one of the most famous inequalities in algebra by building fences.`,
     paragraph: ``
 }, {
     id: 4,

@@ -37,32 +37,13 @@
             <div class="blog-nav" onclick="moveBack()">&#8592; Back to all posts</div>
         </div>
         <div id="selected-post">
-            <h2 id="selected-h2">Tools you will need when learning maths.</h2>
+            <h2 id="selected-h2">AM-GM Inequality</h2>
             <div id="selected-main-background"></div>
-            <p class="selected-paragraph">&emsp;Playing music requires an instrument. Marking artistic paintings need
-                colors and brushes. When learning mathematics, you only need a pen and some paper, however, you will
-                advance faster if you have these tools.</p>
-            <p class="selected-insight">Like every other subject, you need more advanced tools to move faster in the
-                field that you are researching.</p>
-            <p class="selected-paragraph bold">1. Rulers and compasses</p>
-            <img class="selected-img" src="img/post/p2/2.1.jpg">
-            <p class="selected-paragraph">&emsp;If you study geometry or graphs, you will need rulers. Not only straight
-                rulers, but you will also need protractors to measure angles, curve rulers to draw graphs. Moreover, the
-                compass will come in handy when you need to draw a circle.</p>
-            <p class="selected-paragraph bold"></p>
-            <p class="selected-paragraph bold">2. Mathematics softwares</p>
-            <img class="selected-img" src="img/post/p2/2.2.png">
-            <p class="selected-paragraph sub">Geogebra - A free software that help you discover new geometry.</p>
-            <img class="selected-img" src="img/post/p2/2.3.png">
-            <p class="selected-paragraph sub">Maple - A strong calculator and visualizer for maths.</p>
-            <p class="selected-paragraph">&emsp;Back in the day, people used to do tedious calculations by hand, which
-                can contain errors and take a lot of time. Nowadays, programs like Maple will do all that calculations
-                for you. Moreover, if you have trouble imagine shapes, Geometry can visualize them for you. Also, you
-                can create interactive models, especially for teachers which need aids to help their students.</p>
-            <p class="selected-paragraph bold">3. LaTeX</p>
-            <img class="selected-img" src="img/post/p2/2.4.png">
-            <p class="selected-paragraph">&emsp;Yes, you can type mathematics papers in Word, but if you don't know LaTeX, it will take more time to type the papers. LaTeX is like a simple programming language for maths typing. It allows shortcuts and decorations for your papers. Moreover, not every symbol and function in maths is supported by Word but can be incorporated using LaTeX. Taking time to learn LaTeX will help you from wasting time finding symbols from the Internet to copy and paste that into your papers.
-            </p>
+            <p class="selected-paragraph">&emsp;Assuming Alan wants to make a farm, Alan will need fences to round that farm. The price for every meter of the fence is \(\$50\). Also, Alan only wants a rectangular farm with an area of \(900\) square meters. What is the minimum price that Alan has to pay for the fences?</p>
+            <img class="selected-img" src="img/post/p3/3.1.png">
+            <p class="selected-paragraph">&emsp;To make this problem easier, let $x$ meter and $y$ meter be the width and the length of the farm, respectively. Since the area of the farm is $900m^2$, we have $$xy=900.$$&emsp;The perimeter of the farm is $2(x+y)$ meter, therefore, the farm will cost Alan \(\$50\times2(x+y)\), in other words, \($100(x+y)\). Hence, to minimize the cost, we need to minimize \(x+y\).</p>
+            <p class="selected-paragraph">&emsp;Let's plug in some number for $x$ and $y$.<br>&emsp;&emsp;If $(x,y)=(10,90)$, we have $x+y=10+90=100$.<br>&emsp;&emsp;If $(x,y)=(30,30)$, we have $x+y=30+30=60$.<br>&emsp;&emsp;If $(x,y)=(1,900)$, we have $x+y=1+900=901$.</p>
+            <p class="selected-paragraph">&emsp;It seems like if $x=y$, $x+y$ will be at minimum.</p>
         </div>
         <div id="recent-posts-container">
             <div id="recent-posts-container-navbar">
@@ -120,6 +101,12 @@
     </footer>
 
     <!-- Script -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script src="js/script.js"></script>
     <script src="js/post.js"></script>
 </body>
