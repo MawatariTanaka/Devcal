@@ -125,7 +125,32 @@ var posts = [{
         mainPicSize: `cover`
     },
     subTitle: `Let's look at one of the most famous inequalities in algebra by building fences.`,
-    paragraph: ``
+    paragraph: `<h2 id="selected-h2">AM-GM Inequality</h2>
+    <div id="selected-main-background"></div>
+    <p class="selected-paragraph">&emsp;Assuming Alan wants to make a farm, Alan will need fences to round that
+        farm. The price for every meter of the fence is $\\$50$. Also, Alan only wants a rectangular farm with
+        an area of $900$ square meters. What is the minimum price that Alan has to pay for the fences?</p>
+    <img class="selected-img" src="img/post/p3/3.1.png">
+    <p class="selected-paragraph">&emsp;To make this problem easier, let $x$ meter and $y$ meter be the width
+        and the length of the farm, respectively. Since the area of the farm is $900m^2$, we have
+        $$xy=900.$$&emsp;The perimeter of the farm is $2(x+y)$ meter, therefore, the farm will cost Alan
+        $\\$50\\times2(x+y)$, in other words, $\\$100(x+y)$. Hence, to minimize the cost, we need to minimize
+        $x+y$.</p>
+    <p class="selected-paragraph">&emsp;Let's plug in some number for $x$ and $y$.<br>&emsp;&emsp;If
+        $(x,y)=(10,90)$, we have $x+y=10+90=100$.<br>&emsp;&emsp;If $(x,y)=(30,30)$, we have
+        $x+y=30+30=60$.<br>&emsp;&emsp;If $(x,y)=(900,1)$, we have $x+y=900+1=901$.</p>
+    <p class="selected-paragraph">&emsp;It seems like if $x=y$, $x+y$ will be at minimum. But how do we prove
+        it? Or maybe there exists a smaller value of $x+y$?</p>
+    <p class="selected-paragraph">&emsp;Notice that $a^2$ cannot be negative for any real value of $a$.
+        Therefore, $$(x-y)^2\\geq0,$$by doing some algebra, we get \\begin{align*}
+        x^2-2xy+y^2 &\\geq 0 \\\\
+        x^2+2xy+y^2 &\\geq 4xy \\\\
+        (x+y)^2 &\\geq 4xy. \\\\
+        \\end{align*}Also, because $x$ and $y$ are positive numbers, we can take the square root from both sides,
+        which gives us $x+y\\geq2\\sqrt{xy}.$</p>
+    <p class="selected-paragraph">At the start, we have $xy = 900$. Using this inequality, we can conclude that $x+y\\geq2\\sqrt{900}$, in other words, $x+y\\geq60$.</p>
+    <p class="selected-insight">To minimize or maximize something, all values need to be equal (if there is no weight for any number).</p>
+    <p class="selected-paragraph">Also, Alan, you may need $\\$6000$ to build your fences.</p>`
 }, {
     id: 4,
     title: `How to use a calculator effectively`,
@@ -136,7 +161,18 @@ var posts = [{
         mainPicSize: `cover`
     },
     subTitle: `Everyone know what (scientific) calculators are, but not everyone knows how to use them effectively. Do you know how to use a calculator well so that you can solve problems quicker? Let's find out.`,
-    paragraph: ``
+    paragraph: `<h2 id="selected-h2">How to use a calculator effectively?</h2>
+    <div id="selected-main-background"></div>
+    <p class="selected-paragraph">&emsp;When learning mathematics, it is essential to have a calculator. Either a scientific or classic one, these tips will help you use this amazing tool better.</p>
+    <p class="selected-paragraph bold">1. Getting to know what your calculator does</p>
+    <img class="selected-img" src="img/post/p4/4.1.png">
+    <p class="selected-paragraph">&emsp;In general, all classic calculators will have functions such as doing simple operations and remember numbers. Scientific calculators will have more functions like solving equations, doing integral; some can even draw graphs. Learning the fundamental tools that your calculator provides is necessary to use the machine well. Moreover, don't throw your calculator's guide away, sometimes you will forget how to do specific tasks, you will need this help.</p>
+    <p class="selected-paragraph bold">2. Practice solving problems with your calculators</p>
+    <img class="selected-img" src="img/post/p4/4.2.png">
+    <p class="selected-paragraph">&emsp;I'm not referencing written-proof questions. Those often only use logic and do not require tedious calculations. To improve at using your calculator, do challenging computations using hideous or big numbers. Moreover, try to find shortcuts when doing word problems. Not every word problems are proof needed. Some ask you for specific values, in which you can practice using your calculator.</p>
+    <p class="selected-paragraph bold">3. Learn to touch type</p>
+    <img class="selected-img" src="img/post/p4/4.3.jpg">
+    <p class="selected-paragraph">&emsp;You may wonder why touch typing on a computer will help you press the buttons on a calculator. The reason is simple, your finger will be more flexible. Also, touch type is a valuable skill to have outside of mathematics. So, why not learn it?</p>`
 }];
 
 var problems = [];

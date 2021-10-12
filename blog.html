@@ -22,8 +22,10 @@
         <h1 id="web-name">Dev<b>Cal</b></h1>
         <div id="head-nav">
             <nav>
-                <a href="index.html" class="head-nav-bar">Home</a><a href="blog.html" class="head-nav-bar">Blog</a><a
-                    href="post.html" class="head-nav-bar">About</a><a href="#" class="head-nav-bar">Contact</a>
+                <a href="index.html" class="head-nav-bar">Home</a>
+                <a href="blog.html" class="head-nav-bar">Blog</a>
+                <a href="post.html" class="head-nav-bar">About</a>
+                <a href="#" class="head-nav-bar">Contact</a>
             </nav>
         </div>
         <div id="subscribe">
@@ -33,13 +35,13 @@
         </div>
     </header>
     <main>
-        <select id="blog-category">
+        <select id="blog-category" onchange="createPosts()">
             <option value="all-posts">All Posts</option>
             <option value="recent-problems">Daily Problems</option>
             <option value="tech-math">Tech Maths</option>
             <option value="math-innovation">Math Tips and Innovations</option>
         </select>
-        <div class="blog-nav-bar">
+        <div id="blog-nav-bar">
             <div class="blog-nav" onclick="showPosts()">All Posts</div>
             <div class="blog-nav" onclick="showSomePosts(problems)">Daily Problems</div>
             <div class="blog-nav" onclick="showSomePosts(techs)">Tech Maths</div>
@@ -51,7 +53,7 @@
         <p class="footer-title">Subscribe to DevCal newsletter</p>
         <p class="footer-detail">Get our weekly math tips and problems with solutions. Good luck on your way of become a
             great mathematician!</p>
-        <form class="footer-form">s
+        <form class="footer-form">
             <label for="email">Email*:</label><br>
             <div class="form-control">
                 <input class="form-input" type="email" name="email" placeholder="Your awesome email">

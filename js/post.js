@@ -14,6 +14,9 @@ postControl(window.localStorage.getItem('postId'));
 
 /// Slide show
 
+// Add random posts to slide show
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
