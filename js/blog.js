@@ -8,7 +8,6 @@ function changeBackground(tag, n) {
 };
 
 function createPosts() {
-    console.log("K");
     if (blogCategory.selectedIndex == 0) {
         allBlogContainer.innerHTML = ``;
         for (i = posts.length - 1; i >= 0; i--) {
