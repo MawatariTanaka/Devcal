@@ -68,7 +68,7 @@ function ex1(tag) {
     for (i = tag.length - 1; i >= 0; i--) {
         allBlogContainer.innerHTML += `
                 <div class="blog-container">
-                    <div class="blog-child" id="blog-${posts[tag[i]].id}">
+                    <div class="blog-child" id="blog-${posts[tag[i]].id}" onclick="moveToPosts(${posts[tag[i]].id})">
                         <div class="blog-background" id="blog-pic-${posts[tag[i]].id}"></div>
                         <div class="blog-text">
                             <h2 class="blog-h2">${posts[tag[i]].title}</h2>

@@ -28,15 +28,15 @@ for (let i = 0; i < 3; i++) {
 }
 
 document.getElementById("recent-posts-slideshow").innerHTML = `
-    <div class="recent-post fade">
+    <div class="recent-post fade" onclick="moveToPosts(${showedPost[0]})">
     <div class="post-pic" id="post-pic-${showedPost[0]}"></div>
     <div class="post-h2" id="post-h2-${showedPost[0]}"></div>
     </div>
-    <div class="recent-post fade">
+    <div class="recent-post fade" onclick="moveToPosts(${showedPost[1]})">
     <div class="post-pic" id="post-pic-${showedPost[1]}"></div>
     <div class="post-h2" id="post-h2-${showedPost[1]}"></div>
     </div>
-    <div class="recent-post fade">
+    <div class="recent-post fade" onclick="moveToPosts(${showedPost[2]})">
     <div class="post-pic" id="post-pic-${showedPost[2]}"></div>
     <div class="post-h2" id="post-h2-${showedPost[2]}"></div>
     </div>
@@ -45,15 +45,15 @@ document.getElementById("recent-posts-slideshow").innerHTML = `
 `;
 
 document.getElementById("recent-posts-nav").innerHTML = `
-    <div class="recent-post-a">
+    <div class="recent-post-a" onclick="moveToPosts(${showedPost[0]})">
         <div class="post-pic-a" id="post-big-pic-${showedPost[0]}"></div>
         <div class="post-h2-a" id="post-big-h2-${showedPost[0]}"></div>
     </div>
-    <div class="recent-post-a">
+    <div class="recent-post-a" onclick="moveToPosts(${showedPost[1]})">
         <div class="post-pic-a" id="post-big-pic-${showedPost[1]}"></div>
         <div class="post-h2-a" id="post-big-h2-${showedPost[1]}"></div>
     </div>
-    <div class="recent-post-a">
+    <div class="recent-post-a" onclick="moveToPosts(${showedPost[2]})">
         <div class="post-pic-a" id="post-big-pic-${showedPost[2]}"></div>
         <div class="post-h2-a" id="post-big-h2-${showedPost[2]}"></div>
     </div>
