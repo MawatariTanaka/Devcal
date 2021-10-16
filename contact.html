@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div id="head-nav">
             <nav>
                 <a href="index.html" class="head-nav-bar">Home</a>
-                <a href="#" class="head-nav-bar">Blog</a>
+                <a href="blog.html" class="head-nav-bar">Blog</a>
                 <a href="about.html" class="head-nav-bar">About</a>
                 <a href="#" class="head-nav-bar">Contact</a>
             </nav>
@@ -30,19 +30,19 @@
         </div>
     </header>
     <main>
-        <select id="blog-category" onchange="createPosts()">
-            <option value="all-posts">All Posts</option>
-            <option value="recent-problems">Daily Problems</option>
-            <option value="tech-math">Tech Maths</option>
-            <option value="math-innovation">Math Tips and Innovations</option>
-        </select>
-        <div id="blog-nav-bar">
-            <div class="blog-nav" onclick="showPosts()">All Posts</div>
-            <div class="blog-nav" onclick="showSomePosts(problems)">Daily Problems</div>
-            <div class="blog-nav" onclick="showSomePosts(techs)">Tech Maths</div>
-            <div class="blog-nav" onclick="showSomePosts(innovations)">Math Tips and Innovations</div>
+        <div class="header-background" id="contact">
+            <div class="main-title" id="contact-title">Problem Recommendations and Comments</div>
+            <div class="small-underline"></div>
+            <form id="contact-form">
+                <label>Your beautiful name:</label>
+                <input name="name"><br>
+                <label>Your amazing email:</label>
+                <input name="email"><br>
+                <label>Comments or new problems:</label>
+                <textarea name="comment" rows="5" id="input-comment"></textarea><br>
+                <input id="contact-submit" type="submit" value="Send my idea!">
+            </form>
         </div>
-        <div id="all-blog-container"></div>
     </main>
     <footer id="footer">
         <p class="footer-title">Subscribe to DevCal newsletter</p>
@@ -56,8 +56,6 @@
             </div>
         </form>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/blog.js"></script>
 </body>
 
 </html>

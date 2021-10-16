@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap');
 
-#about-me {
-    background: url("../img/background/whiteboard-with-formulas.jpg") right / cover no-repeat #426cf3;
-    background-blend-mode: multiply;
-    padding: 20px;
-}
-
-.about-title {
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin: 20px 0 15px;
-}
-
-.small-underline {
-    width: 60px;
-    height: 5px;
-    background: #ff3644;
-    margin-bottom: 20px;
-}
-
 #my-pic {
     width: 100%;
     height: 300px;
