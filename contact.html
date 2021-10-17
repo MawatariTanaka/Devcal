@@ -33,15 +33,17 @@
         <div class="header-background" id="contact">
             <div class="main-title" id="contact-title">Problem Recommendations and Comments</div>
             <div class="small-underline"></div>
-            <form id="contact-form">
+            <div id="contact-form">
                 <label>Your beautiful name:</label>
-                <input name="name"><br>
+                <input id="contact-name"><br>
                 <label>Your amazing email:</label>
-                <input name="email"><br>
+                <input id="contact-email"><br>
                 <label>Comments or new problems:</label>
-                <textarea name="comment" rows="5" id="input-comment"></textarea><br>
-                <input id="contact-submit" type="submit" value="Send my idea!">
-            </form>
+                <textarea id="contact-comment" rows="5"></textarea><br>
+                <p id="fail">Oh, you forget something.</p>
+                <p id="success">Thanks a lot!</p>
+                <button id="contact-submit" onclick="checkRecommendedField()">Send my idea!</button>
+            </div>
         </div>
     </main>
     <footer id="footer">
@@ -56,6 +58,8 @@
             </div>
         </form>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
