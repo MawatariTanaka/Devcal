@@ -4,8 +4,8 @@
 // Change posts
 function updatePost(tagPost, prefix, n) {
     tagPost.innerHTML = `
-    <div class="background-main-post" id="${prefix}-pic-${n}" onclick="moveToPosts(${n})"></div>
-    <div class="summarize-main-post" onclick="moveToPosts(${posts[n].id})">
+    <div class="background-main-post" data-aos="fade-right" id="${prefix}-pic-${n}" onclick="moveToPosts(${n})"></div>
+    <div class="summarize-main-post" data-aos="fade-left" onclick="moveToPosts(${posts[n].id})">
         <h2 class="main-post-h2">${posts[n].title}</h2>
         <p class="summarize-main-post-short">${posts[n].subTitle}</p>
     </div>`;
