@@ -119,7 +119,7 @@ var posts = [{
     </p>`
 }, {
     id: 3,
-    title: `AM-GM Inequality`,
+    title: `Farm Building`,
     tag: `problem`,
     mainPicture: {
         mainPicImage: `url('../img/background/am-gm-inequality.png')`,
@@ -127,7 +127,7 @@ var posts = [{
         mainPicSize: `cover`
     },
     subTitle: `Let's look at one of the most famous inequalities in algebra by building fences.`,
-    paragraph: `<h2 id="selected-h2">AM-GM Inequality</h2>
+    paragraph: `<h2 id="selected-h2">Farm Building</h2>
     <div id="selected-main-background"></div>
     <p class="selected-paragraph">&emsp;Assuming Alan wants to make a farm, Alan will need fences to round that
         farm. The price for every meter of the fence is $\\$50$. Also, Alan only wants a rectangular farm with
