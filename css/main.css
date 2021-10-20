@@ -108,7 +108,8 @@
     transition: color 0.5s;
 }
 
-.sub-post-h2:hover, .sub-post-h2:active {
+.sub-post-h2:hover,
+.sub-post-h2:active {
     color: #ff3644;
 }
 
