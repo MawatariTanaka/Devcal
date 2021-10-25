@@ -32,6 +32,7 @@
     border: none;
     border-bottom: 1px solid white;
     caret-color: white;
+    resize: none;
     color: white;
     font-size: 16px;
     margin: 10px 0 20px;
