@@ -396,3 +396,8 @@ i {
 * {
     word-wrap: break-word;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+}
