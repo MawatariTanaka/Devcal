@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link href="css/post.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 id="web-name">
+        Dev<b>Cal</b> <span style="font-weight: 200">Analytics</span>
+      </h1>
+      <nav class="head-nav-bar">
+        <a href="admin.html" class="head-nav">Home</a>
+        <a href="#" class="head-nav">Traffic</a>
+        <a href="#" class="head-nav">Mails</a>
+        <a href="#" class="head-nav">Database</a>
+      </nav>
+      <nav class="user-nav-bar">
+        <a href="#" class="user-nav">Login</a>
+        <a href="#" class="user-nav">Register</a>
+      </nav>
+    </header>
+
+    <!-- Add a post -->
+
+    <section class="new-post">
+      <h2>Add a post</h2>
+      <form class="post-form">
+        <label class="post-label" for="new-post-title"
+          >Your Brilliant Title:</label
+        >
+        <input
+          class="post-input"
+          type="text"
+          id="new-post-title"
+          name="new-post-title"
+          placeholder="Your Brilliant Title Here"
+        />
+        <label class="post-label" for="new-post-content"
+          >Your Clever Ideas:</label
+        >
+        <textarea
+          class="post-input"
+          rows="15"
+          id="new-post-content"
+          name="new-post-content"
+          placeholder="Your Clever Ideas Here"
+        ></textarea>
+      </form>
+    </section>
+  </body>
+</html>
