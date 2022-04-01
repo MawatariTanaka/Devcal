@@ -1,0 +1,21 @@
+@import url(admin.css);
+
+.new-post {
+  padding: 0 15px;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.post-input {
+  resize: none;
+  margin: 5px 0 20px;
+  border: 1px solid black;
+}
