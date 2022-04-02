@@ -1,28 +1,25 @@
-@import url(admin.css);
-
-.new-post {
+.new-auth {
   padding: 0 15px;
 }
 
-.post-form {
+.auth-form {
   display: flex;
   flex-direction: column;
 }
 
-.post-label {
+.auth-label {
   font-size: 18px;
   font-weight: 500;
 }
 
-.post-input {
-  resize: none;
+.auth-input {
   padding: 10px 5px;
   margin: 5px 0 20px;
   border: 1px solid #9b9a9a;
   border-radius: 10px;
 }
 
-.post-submit {
+.auth-submit {
   width: 30%;
   padding: 10px;
   border: none;

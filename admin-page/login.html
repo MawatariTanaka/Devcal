@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post</title>
-    <link href="css/post.css" rel="stylesheet" />
+    <title>Login</title>
+    <link href="css/admin.css" rel="stylesheet" />
+    <link href="css/auth.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -23,33 +24,30 @@
         <a href="register.html" class="user-nav">Register</a>
       </nav>
     </header>
-
-    <!-- Add a post -->
-
-    <section class="new-post">
-      <h2>Add a post</h2>
-      <form class="post-form">
-        <label class="post-label" for="new-post-title"
-          >Your Brilliant Title:</label
+    <section class="new-auth">
+      <h2>Login</h2>
+      <form class="auth-form">
+        <label class="auth-label" for="login-username"
+          >Your beloved username:</label
         >
         <input
-          class="post-input"
+          class="auth-input"
           type="text"
-          id="new-post-title"
-          name="new-post-title"
-          placeholder="Your Brilliant Title Here"
+          id="login-username"
+          name="login-username"
+          placeholder="Username"
         />
-        <label class="post-label" for="new-post-content"
-          >Your Clever Ideas:</label
+        <label class="auth-label" for="login-username"
+          >Your secured password:</label
         >
-        <textarea
-          class="post-input"
-          rows="15"
-          id="new-post-content"
-          name="new-post-content"
-          placeholder="Your Clever Ideas Here"
-        ></textarea>
-        <button class="post-submit">Submit</button>
+        <input
+          class="auth-input"
+          type="password"
+          id="login-password"
+          name="login-password"
+          placeholder="Password"
+        />
+        <button class="auth-submit">Submit</button>
       </form>
     </section>
   </body>
