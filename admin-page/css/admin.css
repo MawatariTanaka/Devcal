@@ -145,3 +145,23 @@ header h1 {
 .request-date {
   font-weight: 400;
 }
+
+@media only screen and (min-width: 768px) {
+  .analytic-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .analytic-summary {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .analytic-main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .analytic-summary {
+    grid-column: span 3;
+    justify-content: space-around;
+  }
+}

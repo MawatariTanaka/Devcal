@@ -1,236 +1,293 @@
 /* Main title */
 
 #main-1 {
-    background: url("../img/background/whiteboard-with-formulas.jpg") right / cover no-repeat #426cf3;
-    background-blend-mode: multiply;
-    padding: 20px;
+  background: url('../img/background/whiteboard-with-formulas.jpg') right /
+    cover no-repeat #426cf3;
+  background-blend-mode: multiply;
+  padding: 20px;
 }
 
 .subtitle {
-    text-align: center;
-    line-height: 30px;
-    font-size: 20px;
-    color: white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  color: white;
 }
 
 #main-1 p c {
-    line-height: 70px;
-    font-size: 50px;
+  line-height: 70px;
+  font-size: 50px;
 }
 
 #main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main-a {
-    width: 40%;
-    min-height: 100px;
-    padding: 10px;
-    margin: 15px 0;
-    background-color: white;
-    text-align: center;
+  width: 40%;
+  min-height: 100px;
+  padding: 10px;
+  margin: 15px 0;
+  background-color: white;
+  text-align: center;
 }
 
 #math-innovation-nav {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 /* #FF2736 */
 
 .main-icon {
-    width: 60px;
-    margin: 10px;
+  width: 60px;
+  margin: 10px;
 }
 
 /* Featured Post */
 
 .main-background-blue {
-    background: #0332cb;
-    padding: 50px 20px;
-    color: white;
+  background: #0332cb;
+  padding: 50px 20px;
+  color: white;
 }
 
 .background-main-post {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
 
 .summarize-main-post {
-    min-height: 200px;
-    padding: 30px 20px;
-    border-bottom: 1px solid #385dd2;
+  min-height: 200px;
+  padding: 30px 20px;
+  border-bottom: 1px solid #385dd2;
 }
 
 .summarize-main-post:active {
-    color: #ff3644;
+  color: #ff3644;
 }
 
 .main-post-h2 {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: inherit;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: inherit;
 }
 
 .summarize-main-post-short {
-    font-size: 14px;
-    text-align: justify;
-    overflow-wrap: break-word;
+  font-size: 14px;
+  text-align: justify;
+  overflow-wrap: break-word;
 }
 
 /* Recent Posts */
 
 .main-background-light-blue {
-    padding: 50px 20px;
-    background: #cfdefc;
+  padding: 50px 20px;
+  background: #cfdefc;
 }
 
-
 .sub-post {
-    margin: 30px 0;
-    background-color: white;
+  margin: 30px 0;
+  background-color: white;
 }
 
 .sub-post-picture {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
 
 .sub-post-h2 {
-    width: 90%;
-    font-size: 25px;
-    font-weight: 600;
-    padding: 20px;
-    margin: 0 auto 25px;
-    border-bottom: 1px solid gray;
-    transition: color 0.5s;
+  width: 90%;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px;
+  margin: 0 auto 25px;
+  border-bottom: 1px solid gray;
+  transition: color 0.5s;
 }
 
 .sub-post-h2:hover,
 .sub-post-h2:active {
-    color: #ff3644;
+  color: #ff3644;
 }
 
 /* Daily problem */
 
 #main-daily-problem-post {
-    background: url('../img/background/am-gm-inequality.png') center / cover no-repeat;
+  background: url('../img/background/am-gm-inequality.png') center / cover
+    no-repeat;
 }
 
 /* Quote */
 
 #quote-symbol {
-    padding-top: 50px;
-    width: 50px;
+  padding-top: 50px;
+  width: 50px;
 }
 
 #main-quote {
-    margin-top: -50px;
-    font-size: 30px;
-    text-align: center;
+  margin-top: -50px;
+  font-size: 30px;
+  text-align: center;
 }
 
 #quote-author {
-    padding: 30px;
-    text-align: center;
-    font-size: 20px;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
 }
 
 /* Tech maths */
 
 #main-tech-post {
-    background: url('../img/background/calculator.jpg') center / cover no-repeat;
+  background: url('../img/background/calculator.jpg') center / cover no-repeat;
 }
 
 /* Math tips and innovations */
 
 #main-innovation-post {
-    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
+  background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg')
+    right center / cover no-repeat;
 }
+
+/* About page */
+
+.my-pic {
+  width: 100%;
+  height: 300px;
+  border: solid 10px white;
+  margin-right: 20px;
+  background: url('../img/background/my-pic.jpg') center / cover no-repeat;
+}
+
+.my-text-header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+  padding: 30px 0;
+}
+
+.my-description {
+  line-height: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+/* ------------------------------------------------------------------ */
 
 /* Computer Screen */
 
 @media screen and (min-width: 768px) {
+  /* Main title */
 
-    /* Main title */
-    #main-1 {
-        padding: 100px;
-    }
+  #main-1 {
+    padding: 100px;
+  }
 
-    #main-nav {
-        width: 70%;
-        margin: 25px auto;
-    }
+  #main-nav {
+    width: 70%;
+    margin: 25px auto;
+  }
 
-    #math-innovation-nav {
-        flex-grow: 0;
-    }
+  #math-innovation-nav {
+    flex-grow: 0;
+  }
 
-    .main-a {
-        width: 30%;
-        padding: 50px 0;
-    }
+  .main-a {
+    width: 30%;
+    padding: 50px 0;
+  }
 
-    /* Featured Post */
-    .main-background-blue {
-        padding: 100px 200px 150px;
-    }
+  /* Featured Post */
+  .main-background-blue {
+    padding: 100px 200px 150px;
+  }
 
-    .main-post {
-        display: flex;
-        justify-content: space-between;
-    }
+  .main-post {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .main-title {
-        font-size: 50px;
-    }
+  .main-title {
+    font-size: 50px;
+  }
 
-    .background-main-post {
-        width: 50%;
-        min-height: 300px;
-    }
+  .background-main-post {
+    width: 50%;
+    min-height: 300px;
+  }
 
-    .summarize-main-post {
-        width: 45%;
-        transition: color 0.5s;
-    }
+  .summarize-main-post {
+    width: 45%;
+    transition: color 0.5s;
+  }
 
-    .summarize-main-post:hover {
-        color: #ff3644;
-    }
+  .summarize-main-post:hover {
+    color: #ff3644;
+  }
 
-    .main-post-h2 {
-        font-size: 30px;
+  .main-post-h2 {
+    font-size: 30px;
+  }
 
-    }
+  .summarize-main-post-short {
+    font-size: 17px;
+  }
 
-    .summarize-main-post-short {
-        font-size: 17px;
-    }
+  /* Recent Posts */
 
-    /* Recent Posts */
+  .main-background-light-blue {
+    padding: 100px 200px 150px;
+  }
 
-    .main-background-light-blue {
-        padding: 100px 200px 150px;
-    }
+  .sub-post-container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .sub-post-container {
-        display: flex;
-        justify-content: space-between;
-    }
+  .sub-post {
+    width: 31%;
+  }
 
-    .sub-post {
-        width: 31%;
-    }
+  .sub-post-h2 {
+    font-size: 20px;
+  }
 
-    .sub-post-h2 {
-        font-size: 20px;
-    }
+  #quote-symbol {
+    width: 75px;
+    padding-bottom: 30px;
+  }
 
-    #quote-symbol {
-        width: 75px;
-        padding-bottom: 30px;
-    }
+  /* About page */
+  .about-me {
+    padding: 50px 150px 125px;
+  }
+
+  .my-profile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .my-pic {
+    width: 400px;
+    height: 400px;
+  }
+
+  .my-text {
+    width: 600px;
+  }
+
+  .my-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .my-text-header {
+    font-size: 28px;
+    font-weight: 700;
+  }
 }

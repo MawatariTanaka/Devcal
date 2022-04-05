@@ -16,130 +16,14 @@
   </head>
 
   <body>
-    <header>
-      <h1 id="web-name">Dev<b>Cal</b></h1>
-      <div class="head-nav">
-        <nav>
-          <a href="#" class="head-nav-bar">Home</a>
-          <a href="blog.html" class="head-nav-bar">Blog</a>
-          <a href="about.html" class="head-nav-bar">About</a>
-          <a href="contact.html" class="head-nav-bar">Contact</a>
-        </nav>
-      </div>
-      <div class="subscribe">
-        <a href="#footer" style="color: white; text-decoration: none">
-          Subscribe
-        </a>
-      </div>
-    </header>
-    <main>
-      <div class="header-background" id="main-1">
-        <p class="subtitle">
-          Welcome to <br />
-          <c>Dev<b>Cal</b></c>
-        </p>
-        <p class="subtitle" style="text-transform: uppercase">
-          My blog on studying mathematics
-        </p>
-        <nav id="main-nav">
-          <a
-            href="#recent-problem"
-            class="animate__animated animate__backInUp main-a"
-            id="recent-problem-nav"
-          >
-            <img
-              src="img/icon/problem.svg"
-              class="main-icon"
-              id="main-icon-0"
-            /><br />Daily Problems
-          </a>
-          <a
-            href="#tech-math"
-            class="animate__animated animate__backInUp main-a"
-            id="tech-math-nav"
-          >
-            <img
-              src="img/icon/calculator.svg"
-              class="main-icon"
-              id="main-icon-1"
-            /><br />Tech Math
-          </a>
-          <a
-            href="#math-innovation"
-            class="animate__animated animate__backInUp main-a"
-            id="math-innovation-nav"
-          >
-            <img
-              src="img/icon/innovation.svg"
-              class="main-icon"
-              id="main-icon-2"
-            /><br />Math Tips and Innovations
-          </a>
-        </nav>
-      </div>
-      <div id="main-featured" class="main-background-blue">
-        <div class="main-title">Featured <br />Post</div>
-        <div class="small-underline"></div>
-        <div class="main-post" id="main-featured-post"></div>
-      </div>
-      <div id="main-recent" class="main-background-light-blue">
-        <div class="main-title">
-          Recent <br />
-          Posts
-        </div>
-        <div class="small-underline"></div>
-        <ul class="sub-post-container" id="recent-post-container"></ul>
-      </div>
-      <div id="recent-problem" class="main-background-blue">
-        <div class="main-title">
-          Daily <br />
-          Problems
-        </div>
-        <div class="small-underline"></div>
-        <div class="main-post" id="featured-problem"></div>
-      </div>
-      <div id="quote" class="main-background-light-blue">
-        <p id="main-quote">
-          <img src="img/icon/right-quotes-symbol.png" id="quote-symbol" /><br />
-          <b>Mathematics</b> is not about
-          <i>numbers, equations, computations,</i> or <i>algorithms</i>. It is
-          about <b>understanding.</b>
-        </p>
-        <p id="quote-author">/ William Paul Thurston</p>
-      </div>
-      <div id="tech-math" class="main-background-blue">
-        <div class="main-title">Tech <br />Maths</div>
-        <div class="small-underline"></div>
-        <div class="main-post" id="featured-tech"></div>
-      </div>
-      <div id="math-innovation" class="main-background-light-blue">
-        <div class="main-title">Math Tips <br />And Innovation</div>
-        <div class="small-underline"></div>
-        <div class="main-post" id="featured-innovation"></div>
-      </div>
-    </main>
-    <footer id="footer">
-      <p class="footer-title">Subscribe to DevCal newsletter</p>
-      <p class="footer-detail">
-        Get our weekly math tips and problems with solutions. Good luck on your
-        way of become a great mathematician!
-      </p>
-      <form class="footer-form">
-        <label for="email">Email*:</label><br />
-        <div class="form-control">
-          <input
-            class="form-input"
-            type="email"
-            name="email"
-            placeholder="Your awesome email"
-          />
-          <input class="form-button" type="submit" value="Subscribe" />
-        </div>
-      </form>
-    </footer>
+    <div id="app"></div>
+
+    <!-- Seperate parts of the page -->
+    <script src="js/components.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
+
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
