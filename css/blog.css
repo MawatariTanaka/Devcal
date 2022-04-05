@@ -1,4 +1,4 @@
-main {
+.main-blog {
     background-color: #cfdefc;
 }
 
@@ -34,7 +34,6 @@ main {
     border-bottom: 1px solid gray;
 }
 
-
 .blog-text:active {
     color: #ff3644;
 }
@@ -45,7 +44,6 @@ main {
     margin: 25px 0;
 }
 
-
 .blog-summary {
     font-size: 14px;
     text-align: justify;
@@ -53,11 +51,13 @@ main {
 }
 
 #blog-pic-1 {
-    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg') right center / cover no-repeat;
+    background: url('../img/background/flat-lay-abstract-composition-with-innovation-elements.jpg')
+        right center / cover no-repeat;
 }
 
 #blog-pic-2 {
-    background: url('../img/background/am-gm-inequality.png') center / cover no-repeat;
+    background: url('../img/background/am-gm-inequality.png') center / cover
+        no-repeat;
 }
 
 #blog-pic-3 {
@@ -65,7 +65,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    main {
+    .main-blog {
         padding: 100px 180px;
     }
 
