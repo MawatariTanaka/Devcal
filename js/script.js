@@ -5,204 +5,7 @@ var allBlogContainer = document.getElementById('all-blog-container');
 
 const body = document.getElementById('app');
 
-// Header
-
-let Header = `
-    <header>
-      <h1 id="web-name">Dev<b>Cal</b></h1>
-      <nav class="head-nav">
-        <button onclick="switchPage('home')" class="head-nav-bar">Home</button>
-        <button onclick="switchPage('blog')" class="head-nav-bar">Blog</button>
-        <button onclick="switchPage('about')" class="head-nav-bar">About</butt>
-      </nav>
-      <div class="auth-button-container">
-        <button onclick="switchPage('login')" class="auth-button">Login</butt>
-        <button onclick="switchPage('register')" class="auth-button">Register</butt>
-      </div>
-    </header>
-`;
-
-// Main
-
-let Main = ``;
-
-function switchPage(page) {
-    switch (page) {
-        case 'home':
-            Main = `
-        <main>
-            <div class="header-background" id="main-1">
-                <p class="subtitle">
-                Welcome to <br />
-                <c>Dev<b>Cal</b></c>
-                </p>
-                <p class="subtitle" style="text-transform: uppercase">
-                My blog on studying mathematics
-                </p>
-                <nav id="main-nav">
-                <a
-                    href="#recent-problem"
-                    class="animate__animated animate__backInUp main-a"
-                    id="recent-problem-nav"
-                >
-                    <img
-                    src="img/icon/problem.svg"
-                    class="main-icon"
-                    id="main-icon-0"
-                    /><br />Daily Problems
-                </a>
-                <a
-                    href="#tech-math"
-                    class="animate__animated animate__backInUp main-a"
-                    id="tech-math-nav"
-                >
-                    <img
-                    src="img/icon/calculator.svg"
-                    class="main-icon"
-                    id="main-icon-1"
-                    /><br />Tech Math
-                </a>
-                <a
-                    href="#math-innovation"
-                    class="animate__animated animate__backInUp main-a"
-                    id="math-innovation-nav"
-                >
-                    <img
-                    src="img/icon/innovation.svg"
-                    class="main-icon"
-                    id="main-icon-2"
-                    /><br />Math Tips and Innovations
-                </a>
-                </nav>
-            </div>
-            <div id="main-featured" class="main-background-blue">
-                <div class="main-title">Featured <br />Post</div>
-                <div class="small-underline"></div>
-                <div class="main-post" id="main-featured-post"></div>
-            </div>
-            <div id="main-recent" class="main-background-light-blue">
-                <div class="main-title">
-                Recent <br />
-                Posts
-                </div>
-                <div class="small-underline"></div>
-                <ul class="sub-post-container" id="recent-post-container"></ul>
-            </div>
-            <div id="recent-problem" class="main-background-blue">
-                <div class="main-title">
-                Daily <br />
-                Problems
-                </div>
-                <div class="small-underline"></div>
-                <div class="main-post" id="featured-problem"></div>
-            </div>
-            <div id="quote" class="main-background-light-blue">
-                <p id="main-quote">
-                <img src="img/icon/right-quotes-symbol.png" id="quote-symbol" /><br />
-                <b>Mathematics</b> is not about
-                <i>numbers, equations, computations,</i> or <i>algorithms</i>. It is
-                about <b>understanding.</b>
-                </p>
-                <p id="quote-author">/ William Paul Thurston</p>
-            </div>
-            <div id="tech-math" class="main-background-blue">
-                <div class="main-title">Tech <br />Maths</div>
-                <div class="small-underline"></div>
-                <div class="main-post" id="featured-tech"></div>
-            </div>
-            <div id="math-innovation" class="main-background-light-blue">
-                <div class="main-title">Math Tips <br />And Innovation</div>
-                <div class="small-underline"></div>
-                <div class="main-post" id="featured-innovation"></div>
-            </div>
-        </main>
-        `;
-            break;
-        case 'blog':
-            Main = `
-      <main class="main-blog">
-          <select id="blog-category" onchange="createPosts()">
-              <option value="all-posts">All Posts</option>
-              <option value="recent-problems">Daily Problems</option>
-              <option value="tech-math">Tech Maths</option>
-              <option value="math-innovation">
-                  Math Tips and Innovations
-              </option>
-          </select>
-          <div id="blog-nav-bar">
-              <div class="blog-nav" onclick="showPosts()">All Posts</div>
-              <div class="blog-nav" onclick="showSomePosts(problems)">
-                  Daily Problems
-              </div>
-              <div class="blog-nav" onclick="showSomePosts(techs)">
-                  Tech Maths
-              </div>
-              <div class="blog-nav" onclick="showSomePosts(innovations)">
-                  Math Tips and Innovations
-              </div>
-          </div>
-          <div id="all-blog-container"></div>
-      </main>
-      `;
-            break;
-        case 'about':
-            Main = `
-      <main>
-        <div class="header-background about-me">
-          <div class="main-title" style="color: white">About Me</div>
-          <div class="small-underline"></div>
-          <div class="my-profile">
-            <div class="my-pic"></div>
-            <div class="my-text">
-              <h3 class="my-text-header">
-                Good to see you! I am <br /><i>Bùi Nhật Minh</i>.
-              </h3>
-              <p class="my-description">
-                Surprisingly, you are taking your time reading this description
-                about me. I am a people who advocate mathematics and logical
-                thinkings. I prefer games that require tactics rather than games
-                that need flexible fingers. I want to solve challenging problems
-                and feel extraordinary after overcoming them, and I want to show
-                you that feeling I have when I complete a puzzle.
-              </p>
-            </div>
-          </div>
-        </div>
-      </main>
-      `;
-            break;
-    }
-    body.innerHTML = Header + Main + Footer;
-    if (page === 'blog') {
-        blogLoad();
-    }
-}
-
-// Footer
-
-let Footer = `
-    <footer id="footer">
-      <p class="footer-title">Subscribe to DevCal newsletter</p>
-      <p class="footer-detail">
-        Get our weekly math tips and problems with solutions. Good luck on your
-        way of become a great mathematician!
-      </p>
-      <form class="footer-form">
-        <label for="email">Email*:</label><br />
-        <div class="form-control">
-          <input
-            class="form-input"
-            type="email"
-            name="email"
-            placeholder="Your awesome email"
-          />
-          <input class="form-button" type="submit" value="Subscribe" />
-        </div>
-      </form>
-    </footer>
-`;
-
-switchPage('home');
+var slideIndex = 1;
 
 // Core functions
 function randomInteger(min, max) {
@@ -405,6 +208,323 @@ for (let post of posts) {
     }
 }
 
+// Header
+
+let Header = `
+    <header>
+      <h1 id="web-name">Dev<b>Cal</b></h1>
+      <nav class="head-nav">
+        <button onclick="switchPage('home')" class="head-nav-bar">Home</button>
+        <button onclick="switchPage('blog')" class="head-nav-bar">Blog</button>
+        <button onclick="switchPage('about')" class="head-nav-bar">About</butt>
+      </nav>
+      <div class="auth-button-container">
+        <button onclick="switchPage('login')" class="auth-button">Login</butt>
+        <button onclick="switchPage('register')" class="auth-button">Register</butt>
+      </div>
+    </header>
+`;
+
+// Main
+
+let Main = ``;
+
+function switchPage(page) {
+    switch (page) {
+        case 'home':
+            Main = `
+        <main>
+            <div class="header-background" id="main-1">
+                <p class="subtitle">
+                Welcome to <br />
+                <c>Dev<b>Cal</b></c>
+                </p>
+                <p class="subtitle" style="text-transform: uppercase">
+                My blog on studying mathematics
+                </p>
+                <nav id="main-nav">
+                <a
+                    href="#recent-problem"
+                    class="animate__animated animate__backInUp main-a"
+                    id="recent-problem-nav"
+                >
+                    <img
+                    src="img/icon/problem.svg"
+                    class="main-icon"
+                    id="main-icon-0"
+                    /><br />Daily Problems
+                </a>
+                <a
+                    href="#tech-math"
+                    class="animate__animated animate__backInUp main-a"
+                    id="tech-math-nav"
+                >
+                    <img
+                    src="img/icon/calculator.svg"
+                    class="main-icon"
+                    id="main-icon-1"
+                    /><br />Tech Math
+                </a>
+                <a
+                    href="#math-innovation"
+                    class="animate__animated animate__backInUp main-a"
+                    id="math-innovation-nav"
+                >
+                    <img
+                    src="img/icon/innovation.svg"
+                    class="main-icon"
+                    id="main-icon-2"
+                    /><br />Math Tips and Innovations
+                </a>
+                </nav>
+            </div>
+            <div id="main-featured" class="main-background-blue">
+                <div class="main-title">Featured <br />Post</div>
+                <div class="small-underline"></div>
+                <div class="main-post" id="main-featured-post"></div>
+            </div>
+            <div id="main-recent" class="main-background-light-blue">
+                <div class="main-title">
+                Recent <br />
+                Posts
+                </div>
+                <div class="small-underline"></div>
+                <ul class="sub-post-container" id="recent-post-container"></ul>
+            </div>
+            <div id="recent-problem" class="main-background-blue">
+                <div class="main-title">
+                Daily <br />
+                Problems
+                </div>
+                <div class="small-underline"></div>
+                <div class="main-post" id="featured-problem"></div>
+            </div>
+            <div id="quote" class="main-background-light-blue">
+                <p id="main-quote">
+                <img src="img/icon/right-quotes-symbol.png" id="quote-symbol" /><br />
+                <b>Mathematics</b> is not about
+                <i>numbers, equations, computations,</i> or <i>algorithms</i>. It is
+                about <b>understanding.</b>
+                </p>
+                <p id="quote-author">/ William Paul Thurston</p>
+            </div>
+            <div id="tech-math" class="main-background-blue">
+                <div class="main-title">Tech <br />Maths</div>
+                <div class="small-underline"></div>
+                <div class="main-post" id="featured-tech"></div>
+            </div>
+            <div id="math-innovation" class="main-background-light-blue">
+                <div class="main-title">Math Tips <br />And Innovation</div>
+                <div class="small-underline"></div>
+                <div class="main-post" id="featured-innovation"></div>
+            </div>
+        </main>
+        `;
+            break;
+        case 'blog':
+            Main = `
+      <main class="main-blog">
+          <select id="blog-category" onchange="createPosts()">
+              <option value="all-posts">All Posts</option>
+              <option value="recent-problems">Daily Problems</option>
+              <option value="tech-math">Tech Maths</option>
+              <option value="math-innovation">
+                  Math Tips and Innovations
+              </option>
+          </select>
+          <div id="blog-nav-bar">
+              <div class="blog-nav" onclick="showPosts()">All Posts</div>
+              <div class="blog-nav" onclick="showSomePosts(problems)">
+                  Daily Problems
+              </div>
+              <div class="blog-nav" onclick="showSomePosts(techs)">
+                  Tech Maths
+              </div>
+              <div class="blog-nav" onclick="showSomePosts(innovations)">
+                  Math Tips and Innovations
+              </div>
+          </div>
+          <div id="all-blog-container"></div>
+      </main>
+      `;
+            break;
+        case 'about':
+            Main = `
+      <main>
+        <div class="header-background about-me">
+          <div class="main-title" style="color: white">About Me</div>
+          <div class="small-underline"></div>
+          <div class="my-profile">
+            <div class="my-pic"></div>
+            <div class="my-text">
+              <h3 class="my-text-header">
+                Good to see you! I am <br /><i>Bùi Nhật Minh</i>.
+              </h3>
+              <p class="my-description">
+                Surprisingly, you are taking your time reading this description
+                about me. I am a people who advocate mathematics and logical
+                thinkings. I prefer games that require tactics rather than games
+                that need flexible fingers. I want to solve challenging problems
+                and feel extraordinary after overcoming them, and I want to show
+                you that feeling I have when I complete a puzzle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      `;
+            break;
+        case 'post':
+            Main = `
+            <main class="current-post">
+                <div class="blog-nav-bar">
+                    <div class="blog-nav" onclick="switchPage('blog')">&#8592; Back to all posts</div>
+                </div>
+                <div id="selected-post">
+                </div>
+                <div id="recent-posts-container">
+                    <div id="recent-posts-container-navbar">
+                        <div class="recent-posts-h2">Posts You May Like</div>
+                        <div class="see-all-nav" onclick="switchPage('blog')">See All</div>
+                    </div>
+                    <div id="recent-posts-slideshow">
+                    </div>
+                    <div class="dots-line">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <div id="recent-posts-nav">
+                    </div>
+                </div>
+            </main>
+            `;
+            break;
+        case 'login':
+            Main = ``;
+            break;
+        case 'register':
+            Main = ``;
+            break;
+    }
+    body.innerHTML = Header + Main + Footer;
+    if (page === 'home') {
+        updatePost(
+            document.getElementById('main-featured-post'),
+            'main-featured-post',
+            randomInteger(0, posts.length)
+        );
+        updateRecentPost();
+        updatePost(
+            document.getElementById('featured-problem'),
+            'featured-problem',
+            problems[randomInteger(0, problems.length)]
+        );
+        updatePost(
+            document.getElementById('featured-tech'),
+            'featured-tech',
+            techs[randomInteger(0, techs.length)]
+        );
+        updatePost(
+            document.getElementById('featured-innovation'),
+            'featured-innovation',
+            innovations[randomInteger(0, innovations.length)]
+        );
+    } else if (page === 'blog') {
+        blogLoad();
+    } else if (page === 'post') {
+        postControl(window.localStorage.getItem('postId'));
+
+        // Add content to slide show
+        let postIndex = [];
+        for (let post of posts) {
+            postIndex.push(post.id);
+        }
+
+        let showedPost = [];
+        for (let i = 0; i < 3; i++) {
+            let n = Math.floor(Math.random() * postIndex.length);
+            showedPost.push(postIndex[n]);
+            postIndex.splice(n, 1);
+        }
+
+        document.getElementById('recent-posts-slideshow').innerHTML = `
+    <div class="recent-post fade" onclick="moveToPosts(${showedPost[0]})">
+    <div class="post-pic" id="post-pic-${showedPost[0]}"></div>
+    <div class="post-h2" id="post-h2-${showedPost[0]}"></div>
+    </div>
+    <div class="recent-post fade" onclick="moveToPosts(${showedPost[1]})">
+    <div class="post-pic" id="post-pic-${showedPost[1]}"></div>
+    <div class="post-h2" id="post-h2-${showedPost[1]}"></div>
+    </div>
+    <div class="recent-post fade" onclick="moveToPosts(${showedPost[2]})">
+    <div class="post-pic" id="post-pic-${showedPost[2]}"></div>
+    <div class="post-h2" id="post-h2-${showedPost[2]}"></div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+`;
+
+        document.getElementById('recent-posts-nav').innerHTML = `
+    <div class="recent-post-a" onclick="moveToPosts(${showedPost[0]})">
+        <div class="post-pic-a" id="post-big-pic-${showedPost[0]}"></div>
+        <div class="post-h2-a" id="post-big-h2-${showedPost[0]}"></div>
+    </div>
+    <div class="recent-post-a" onclick="moveToPosts(${showedPost[1]})">
+        <div class="post-pic-a" id="post-big-pic-${showedPost[1]}"></div>
+        <div class="post-h2-a" id="post-big-h2-${showedPost[1]}"></div>
+    </div>
+    <div class="recent-post-a" onclick="moveToPosts(${showedPost[2]})">
+        <div class="post-pic-a" id="post-big-pic-${showedPost[2]}"></div>
+        <div class="post-h2-a" id="post-big-h2-${showedPost[2]}"></div>
+    </div>
+`;
+
+        for (let i = 0; i < 3; i++) {
+            changeBackground(
+                document.getElementById(`post-pic-${showedPost[i]}`),
+                showedPost[i]
+            );
+            changeBackground(
+                document.getElementById(`post-big-pic-${showedPost[i]}`),
+                showedPost[i]
+            );
+            document.getElementById(`post-h2-${showedPost[i]}`).innerHTML =
+                posts[showedPost[i]].title;
+            document.getElementById(`post-big-h2-${showedPost[i]}`).innerHTML =
+                posts[showedPost[i]].title;
+        }
+        // Add random posts to slide show
+        showSlides(slideIndex);
+    }
+}
+
+// Footer
+
+let Footer = `
+    <footer id="footer">
+      <p class="footer-title">Subscribe to DevCal newsletter</p>
+      <p class="footer-detail">
+        Get our weekly math tips and problems with solutions. Good luck on your
+        way of become a great mathematician!
+      </p>
+      <form class="footer-form">
+        <label for="email">Email*:</label><br />
+        <div class="form-control">
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="Your awesome email"
+          />
+          <input class="form-button" type="submit" value="Subscribe" />
+        </div>
+      </form>
+    </footer>
+`;
+
+switchPage('home');
+
 function changeBackground(tag, n) {
     tag.style.backgroundImage = posts[n].mainPicture.mainPicImage;
     tag.style.backgroundPosition = posts[n].mainPicture.mainPicPosition;
@@ -414,7 +534,7 @@ function changeBackground(tag, n) {
 function moveToPosts(n) {
     window.localStorage.clear();
     window.localStorage.setItem('postId', n);
-    document.location.href = '../post.html';
+    switchPage('post');
 }
 
 /////////////////////////////////////////////////////////
@@ -445,28 +565,6 @@ function updateRecentPost() {
         changeBackground(document.getElementById(`picture-${i}`), i);
     }
 }
-
-updatePost(
-    document.getElementById('main-featured-post'),
-    'main-featured-post',
-    randomInteger(0, posts.length)
-);
-updateRecentPost();
-updatePost(
-    document.getElementById('featured-problem'),
-    'featured-problem',
-    problems[randomInteger(0, problems.length)]
-);
-updatePost(
-    document.getElementById('featured-tech'),
-    'featured-tech',
-    techs[randomInteger(0, techs.length)]
-);
-updatePost(
-    document.getElementById('featured-innovation'),
-    'featured-innovation',
-    innovations[randomInteger(0, innovations.length)]
-);
 
 /////////////////////////////////////////////////////////
 
@@ -566,4 +664,44 @@ function ex1(tag) {
             posts[tag[i]].id
         );
     }
+}
+
+/// Post control
+
+function postControl(n) {
+    document.getElementById('selected-post').innerHTML = posts[n].paragraph;
+    document.getElementById('selected-h2').innerHTML = posts[n].title;
+    changeBackground(document.getElementById('selected-main-background'), n);
+}
+
+/// Slide show
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName('recent-post');
+    let dots = document.getElementsByClassName('dot');
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].className += ' active';
 }
