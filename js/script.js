@@ -401,10 +401,97 @@ function switchPage(page) {
             `;
             break;
         case 'login':
-            Main = ``;
+            Main = `
+            <main class="auth-container">
+            <h2 class="auth-welcome"><span>Welcome back!</span></h2>
+            <p class="auth-motivation">
+                Are you looking forward to learning something new while also
+                having fun?
+            </p>
+            <form class="auth-form">
+                <button class="auth-outside">
+                    <img class="auth-out-icon" src="img/icon/google.png" />Sign
+                    in with Google
+                </button>
+                <button class="auth-outside">
+                    <img
+                        class="auth-out-icon"
+                        src="img/icon/facebook.png"
+                    />Sign in with Facebook
+                </button>
+                <label class="auth-label" for="username"
+                    >Your awesome username:</label
+                >
+                <input
+                    class="auth-input"
+                    type="text"
+                    id="username"
+                    placeholder="Username here"
+                />
+                <label class="auth-label" for="password"
+                    >Your secured password:</label
+                >
+                <input
+                    class="auth-input"
+                    type="password"
+                    id="password"
+                    placeholder="Password here"
+                />
+                <button class="auth-submit">Submit</button>
+            </form>
+        </main>
+            `;
             break;
         case 'register':
-            Main = ``;
+            Main = `
+             <main class="auth-container">
+            <h2 class="auth-welcome"><span>Welcome to DevCal!</span></h2>
+            <p class="auth-motivation">
+                First time here? How about creating a free account! There is a
+                big mathematics world out there.
+            </p>
+            <form class="auth-form">
+                <button class="auth-outside">
+                    <img class="auth-out-icon" src="img/icon/google.png" />Sign
+                    up with Google
+                </button>
+                <button class="auth-outside">
+                    <img
+                        class="auth-out-icon"
+                        src="img/icon/facebook.png"
+                    />Sign up with Facebook
+                </button>
+                <label class="auth-label" for="username"
+                    >Your awesome username:</label
+                >
+                <input
+                    class="auth-input"
+                    type="text"
+                    id="username"
+                    placeholder="Username here"
+                />
+                <label class="auth-label" for="username"
+                    >Your beloved email:</label
+                >
+                <input
+                    class="auth-input"
+                    type="email"
+                    id="email"
+                    placeholder="Email here"
+                />
+                <label class="auth-label" for="password"
+                    >Your secured password:</label
+                >
+                <input
+                    class="auth-input"
+                    type="password"
+                    id="password"
+                    placeholder="Password here"
+                />
+                <button class="auth-submit">Submit</button>
+            </form>
+        </main>
+            `;
             break;
     }
     body.innerHTML = Header + Main + Footer;

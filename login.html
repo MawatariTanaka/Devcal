@@ -10,22 +10,22 @@
         <link rel="stylesheet" href="css/login.css" />
     </head>
     <body>
-        <div class="auth-container">
-            <h2 class="auth-welcome">Welcome back!</h2>
+        <main class="auth-container">
+            <h2 class="auth-welcome"><span>Welcome to DevCal!</span></h2>
             <p class="auth-motivation">
-                Are you looking forward to learning something new while also
-                having fun?
+                First time here? How about creating a free account! There is a
+                big mathematics world out there.
             </p>
             <form class="auth-form">
                 <button class="auth-outside">
                     <img class="auth-out-icon" src="img/icon/google.png" />Sign
-                    in with Google
+                    up with Google
                 </button>
                 <button class="auth-outside">
                     <img
                         class="auth-out-icon"
                         src="img/icon/facebook.png"
-                    />Sign in with Facebook
+                    />Sign up with Facebook
                 </button>
                 <label class="auth-label" for="username"
                     >Your awesome username:</label
@@ -35,6 +35,15 @@
                     type="text"
                     id="username"
                     placeholder="Username here"
+                />
+                <label class="auth-label" for="username"
+                    >Your beloved email:</label
+                >
+                <input
+                    class="auth-input"
+                    type="email"
+                    id="email"
+                    placeholder="Email here"
                 />
                 <label class="auth-label" for="password"
                     >Your secured password:</label
@@ -47,6 +56,6 @@
                 />
                 <button class="auth-submit">Submit</button>
             </form>
-        </div>
+        </main>
     </body>
 </html>

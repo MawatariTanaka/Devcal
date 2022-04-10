@@ -385,6 +385,68 @@ main {
 #recent-posts-nav {
     display: none;
 }
+
+/* Authentication Page */
+
+.auth-container {
+    padding: 1rem;
+}
+
+.auth-welcome {
+    padding: 0.25rem 0;
+    font-size: 2rem;
+}
+
+.auth-motivation {
+    padding: 0 0 1rem 0;
+    font-size: 14px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-outside {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-out-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.75rem;
+}
+
+.auth-label {
+    padding: 0.25rem 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.auth-input {
+    border: 1px solid #9b9a9a;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+    margin: 0 0 0.5rem;
+    line-height: calc(1rem + 20px);
+}
+
+.auth-submit {
+    width: 30%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 15px;
+    margin: 0.25rem 0 0 0;
+    background-color: #0332cb;
+    color: white;
+    text-align: center;
+}
+
 /* ------------------------------------------------------------------ */
 
 /* Computer Screen */
@@ -652,6 +714,27 @@ main {
         font-size: 24px;
         font-weight: 600;
         padding: 20px;
+    }
+
+    /* Authentication Page */
+
+    .auth-container {
+        height: 75vh;
+        padding: 5rem 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem 2rem;
+    }
+
+    .auth-welcome {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .auth-form {
+        grid-area: 1 / 2 / 3 / 3;
+        margin: auto 0;
     }
 }
 
