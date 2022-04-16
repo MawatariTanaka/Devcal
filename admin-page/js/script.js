@@ -6,14 +6,14 @@ let Header = `
         Dev<b>Cal</b> <span style="font-weight: 200">Analytics</span>
       </h1>
       <nav class="head-nav-bar">
-        <a href="admin.html" class="head-nav">Home</a>
+        <a onclick="switchAdminPage('home')" class="head-nav">Home</a>
         <a href="traffic.html" class="head-nav">Traffic</a>
         <a href="mails.html" class="head-nav">Mails</a>
         <a href="database.html" class="head-nav">Database</a>
       </nav>
       <nav class="user-nav-bar">
-        <a href="login.html" class="user-nav">Login</a>
-        <a href="register.html" class="user-nav">Register</a>
+        <a onclick="switchAdminPage('login')" class="user-nav">Login</a>
+        <a onclick="switchAdminPage('register')" class="user-nav">Register</a>
       </nav>
     </header>
 `;
@@ -49,7 +49,7 @@ function switchAdminPage(page) {
       <section class="recent-posts">
         <div class="recent-posts-title-container">
           <h3>Recent Posts</h3>
-          <a href="post.html" class="add-post-button">Add post</a>
+          <a onclick="switchAdminPage('post')" class="add-post-button">Add post</a>
         </div>
 
         <div class="post-container">
@@ -80,7 +80,7 @@ function switchAdminPage(page) {
       <section class="recent-posts">
         <div class="recent-posts-title-container">
           <h3>Pending Posts</h3>
-          <a href="post.html" class="add-post-button">Add post</a>
+          <a onclick="switchAdminPage('post')" class="add-post-button">Add post</a>
         </div>
 
         <div class="post-container">
@@ -166,6 +166,105 @@ function switchAdminPage(page) {
       </section>
     </main>
             `;
+            break;
+        case 'login':
+            Main = `
+          <section class="new-auth">
+      <h2>Login</h2>
+      <form class="auth-form">
+        <label class="auth-label" for="login-username"
+          >Your beloved username:</label
+        >
+        <input
+          class="auth-input"
+          type="text"
+          id="login-username"
+          name="login-username"
+          placeholder="Username"
+        />
+        <label class="auth-label" for="login-username"
+          >Your secured password:</label
+        >
+        <input
+          class="auth-input"
+          type="password"
+          id="login-password"
+          name="login-password"
+          placeholder="Password"
+        />
+        <button class="auth-submit">Submit</button>
+      </form>
+    </section>
+          `;
+            break;
+        case 'register':
+            Main = `
+                 <section class="new-auth">
+      <h2>Register</h2>
+      <form class="auth-form">
+        <label class="auth-label" for="login-username"
+          >Your beloved username:</label
+        >
+        <input
+          class="auth-input"
+          type="text"
+          id="register-username"
+          name="register-username"
+          placeholder="Username"
+        />
+        <label class="auth-label" for="login-username"
+          >Your awesome email:</label
+        >
+        <input
+          class="auth-input"
+          type="email"
+          id="register-username"
+          name="register-username"
+          placeholder="Email"
+        />
+        <label class="auth-label" for="login-username"
+          >Your secured password:</label
+        >
+        <input
+          class="auth-input"
+          type="password"
+          id="register-password"
+          name="register-password"
+          placeholder="Password"
+        />
+        <button class="auth-submit">Submit</button>
+      </form>
+    </section>
+            `;
+            break;
+        case 'post':
+            Main = `
+              <section class="new-post">
+      <h2>Add a post</h2>
+      <form class="post-form">
+        <label class="post-label" for="new-post-title"
+          >Your Brilliant Title:</label
+        >
+        <input
+          class="post-input"
+          type="text"
+          id="new-post-title"
+          name="new-post-title"
+          placeholder="Your Brilliant Title Here"
+        />
+        <label class="post-label" for="new-post-content"
+          >Your Clever Ideas:</label
+        >
+        <textarea
+          class="post-input"
+          rows="15"
+          id="new-post-content"
+          name="new-post-content"
+          placeholder="Your Clever Ideas Here"
+        ></textarea>
+        <button class="post-submit">Submit</button>
+      </form>
+    </section>`;
             break;
     }
     body.innerHTML = Header + Main + Footer;
