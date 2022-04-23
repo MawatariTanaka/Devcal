@@ -231,21 +231,29 @@ for (let post of posts) {
 
 // Header
 
-let Header = `
-    <header>
-      <h1 id="web-name">Dev<b>Cal</b></h1>
-      <nav class="head-nav">
-        <button onclick="switchPage('home')" class="head-nav-bar">Home</button>
-        <button onclick="switchPage('blog')" class="head-nav-bar">Blog</button>
-        <button onclick="switchPage('quiz')" class="head-nav-bar">Quiz</button>
-        <button onclick="switchPage('about')" class="head-nav-bar">About</button>
-      </nav>
-      <div class="auth-button-container">
-        <button onclick="switchPage('login')" class="auth-button">Login</button>
-        <button onclick="switchPage('register')" class="auth-button">Register</button>
-      </div>
+let Header = ``;
+function switchHeader() {
+    Header = `<header>
+        <h1 id="web-name">Dev<b>Cal</b></h1>
+        <nav class="head-nav">
+            <button onclick="switchPage('home')" class="head-nav-bar">Home</button>
+            <button onclick="switchPage('blog')" class="head-nav-bar">Blog</button>
+            <button onclick="switchPage('quiz')" class="head-nav-bar">Quiz</button>
+            <button onclick="switchPage('about')" class="head-nav-bar">About</button>
+        </nav>
+        ${
+            auth.currentUser
+                ? ` `
+                : `
+                <div class="auth-button-container">
+                    <button onclick="switchPage('login')" class="auth-button">Login</button>
+                    <button onclick="switchPage('register')" class="auth-button">Register</button>
+                </div>
+                `
+        }
     </header>
 `;
+}
 
 // Main
 
@@ -519,6 +527,7 @@ function switchPage(page) {
             `;
             break;
     }
+    switchHeader();
     body.innerHTML = Header + Main + Footer;
     if (page === 'home') {
         updatePost(

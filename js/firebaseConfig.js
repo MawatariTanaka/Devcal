@@ -1,3 +1,7 @@
+function CustomError(code) {
+    this.code = code;
+}
+
 const firebaseApp = firebase.initializeApp({
     apiKey: 'AIzaSyCvzgHwbIw9FjrWsxFbC-npdZ2KwUvneUk',
     authDomain: 'devcal-1e388.firebaseapp.com',
@@ -11,7 +15,7 @@ const firebaseApp = firebase.initializeApp({
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 
-const register = () => {
+function register() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const username = document.getElementById('username').value;
@@ -25,11 +29,11 @@ const register = () => {
             });
         })
         .catch((err) => {
-            console.log('Register failed.');
+            console.log(err.code);
         });
-};
+}
 
-const login = () => {
+function login() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     auth.signInWithEmailAndPassword(email, password)
@@ -38,12 +42,11 @@ const login = () => {
                 auth.currentUser.sendEmailVerification().then(() => {
                     console.log('Verification sent.');
                 });
-                console.log('Need verification');
-                throw 'Need verification';
+                throw new CustomError('auth/need-verification');
             }
-            console.log('Login successful');
+            switchPage('home');
         })
         .catch((err) => {
-            console.log('Login failed.');
+            console.log(err.code);
         });
-};
+}
