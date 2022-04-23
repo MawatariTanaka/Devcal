@@ -237,11 +237,12 @@ let Header = `
       <nav class="head-nav">
         <button onclick="switchPage('home')" class="head-nav-bar">Home</button>
         <button onclick="switchPage('blog')" class="head-nav-bar">Blog</button>
-        <button onclick="switchPage('about')" class="head-nav-bar">About</butt>
+        <button onclick="switchPage('quiz')" class="head-nav-bar">Quiz</button>
+        <button onclick="switchPage('about')" class="head-nav-bar">About</button>
       </nav>
       <div class="auth-button-container">
-        <button onclick="switchPage('login')" class="auth-button">Login</butt>
-        <button onclick="switchPage('register')" class="auth-button">Register</butt>
+        <button onclick="switchPage('login')" class="auth-button">Login</button>
+        <button onclick="switchPage('register')" class="auth-button">Register</button>
       </div>
     </header>
 `;
@@ -369,6 +370,9 @@ function switchPage(page) {
       </main>
       `;
             break;
+        case 'quiz':
+            Main = ``;
+            break;
         case 'about':
             Main = `
       <main>
@@ -429,7 +433,7 @@ function switchPage(page) {
                 Are you looking forward to learning something new while also
                 having fun?
             </p>
-            <form class="auth-form">
+            <div class="auth-form">
                 <button class="auth-outside">
                     <img class="auth-out-icon" src="img/icon/google.png" />Sign
                     in with Google
@@ -441,13 +445,13 @@ function switchPage(page) {
                     />Sign in with Facebook
                 </button>
                 <label class="auth-label" for="username"
-                    >Your awesome username:</label
+                    >Your trusted email:</label
                 >
                 <input
                     class="auth-input"
-                    type="text"
-                    id="username"
-                    placeholder="Username here"
+                    type="email"
+                    id="email"
+                    placeholder="Email here"
                 />
                 <label class="auth-label" for="password"
                     >Your secured password:</label
@@ -458,8 +462,8 @@ function switchPage(page) {
                     id="password"
                     placeholder="Password here"
                 />
-                <button class="auth-submit">Submit</button>
-            </form>
+                <button onclick="login()" class="auth-submit">Submit</button>
+            </div>
         </main>
             `;
             break;
@@ -471,7 +475,7 @@ function switchPage(page) {
                 First time here? How about creating a free account! There is a
                 big mathematics world out there.
             </p>
-            <form class="auth-form">
+            <div class="auth-form">
                 <button class="auth-outside">
                     <img class="auth-out-icon" src="img/icon/google.png" />Sign
                     up with Google
@@ -492,7 +496,7 @@ function switchPage(page) {
                     placeholder="Username here"
                 />
                 <label class="auth-label" for="username"
-                    >Your beloved email:</label
+                    >Your trusted email:</label
                 >
                 <input
                     class="auth-input"
@@ -509,8 +513,8 @@ function switchPage(page) {
                     id="password"
                     placeholder="Password here"
                 />
-                <button class="auth-submit">Submit</button>
-            </form>
+                <button onclick="register()" class="auth-submit">Submit</button>
+            </div>
         </main>
             `;
             break;
