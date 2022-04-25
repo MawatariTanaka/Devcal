@@ -50,3 +50,5 @@ function login() {
             console.log(err.code);
         });
 }
+
+function logout() {}
