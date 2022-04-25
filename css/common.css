@@ -23,8 +23,8 @@ header {
     background: #0332cb;
 }
 
-header > h1 {
-    padding: 20px 0;
+.web-name {
+    padding: 20px;
     color: white;
     text-align: center;
     font-size: 30px;
@@ -47,13 +47,38 @@ header > h1 {
     color: #ff3644;
 }
 
-.auth-button-container {
-    width: 100%;
+.auth-user-container,
+.auth-user-container-wide-screen {
+    width: 40%;
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
     background: #ff3644;
+}
+
+.auth-user-container-wide-screen {
+    display: none;
+}
+
+.image-profile {
+    width: 30px;
+    margin: 10px;
+}
+
+.auth-user-dropdown {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 75px;
+}
+
+.auth-user-dropdown-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
 }
 
 .auth-button {
@@ -148,11 +173,11 @@ footer {
         padding: 0 100px;
     }
 
-    #web-name {
+    .web-name {
         margin-right: auto;
     }
 
-    #head-nav nav {
+    .head-nav nav {
         height: 100%;
         align-items: center;
     }
@@ -166,7 +191,12 @@ footer {
         color: #ff3644;
     }
 
-    .auth-button-container {
+    .auth-user-container {
+        display: none;
+    }
+
+    .auth-user-container-wide-screen {
+        display: flex;
         width: 25%;
     }
 

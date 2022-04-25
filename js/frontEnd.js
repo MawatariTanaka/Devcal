@@ -234,29 +234,84 @@ for (let post of posts) {
 let Header = ``;
 function switchHeader() {
     Header = `<header>
-        <h1 id="web-name">Dev<b>Cal</b></h1>
-        <nav class="head-nav">
-            <button onclick="switchPage('home')" class="head-nav-bar">Home</button>
-            <button onclick="switchPage('blog')" class="head-nav-bar">Blog</button>
-            <button onclick="switchPage('quiz')" class="head-nav-bar">Quiz</button>
-            <button onclick="switchPage('about')" class="head-nav-bar">About</button>
-        </nav>
-        <div class="auth-button-container">
+        <div style="display: flex; justify-content: space-between; margin-right: auto">
+        <h1 class="web-name">Dev<b>Cal</b></h1>
         ${
             auth.currentUser
-                ? ` `
+                ? `
+                <div id="auth-user-container" class="auth-user-container aut-check">
+                    <div class="aut-check" style="color: white">Hello, <b class="aut-check">${
+                        auth.currentUser.displayName
+                    }</b></div>
+                    <img class="image-profile aut-check" src="${
+                        auth.currentUser.photoURL
+                            ? auth.currentUser.photoURl
+                            : `../img/icon/user.png`
+                    }" />
+                    <div class="auth-user-dropdown">
+                        <button class="auth-user-dropdown-button">Log out</button>
+                    </div>
+                </div>
+                `
                 : `
-                <div class="auth-button-container">
+                <div class="auth-user-container">
                     <button onclick="switchPage('login')" class="auth-button">Login</button>
                     <button onclick="switchPage('register')" class="auth-button">Register</button>
                 </div>
                 `
         }
         </div>
+        <nav class="head-nav">
+            <button onclick="switchPage('home')" class="head-nav-bar">Home</button>
+            <button onclick="switchPage('blog')" class="head-nav-bar">Blog</button>
+            <button onclick="switchPage('quiz')" class="head-nav-bar">Quiz</button>
+            <button onclick="switchPage('about')" class="head-nav-bar">About</button>
+        </nav>
+        ${
+            auth.currentUser
+                ? `
+                <div id="auth-user-container" class="auth-user-container-wide-screen aut-check">
+                    <div class="aut-check" style="color: white">Hello, <b class="aut-check">${
+                        auth.currentUser.displayName
+                    }</b></div>
+                    <img class="image-profile aut-check" src="${
+                        auth.currentUser.photoURL
+                            ? auth.currentUser.photoURl
+                            : `../img/icon/user.png`
+                    }" />
+                    <div class="auth-user-dropdown">
+                        <button class="auth-user-dropdown-button">Log out</button>
+                    </div>
+                </div>
+                `
+                : `
+                <div class="auth-user-container-wide-screen">
+                    <button onclick="switchPage('login')" class="auth-button">Login</button>
+                    <button onclick="switchPage('register')" class="auth-button">Register</button>
+                </div>
+                `
+        }
     </header>
 `;
 }
 
+window.onclick = function (event) {
+    if (document.getElementsByClassName('auth-user-dropdown')) {
+        if (event.target.matches('.aut-check') && auth.currentUser) {
+            for (dropdown of document.getElementsByClassName(
+                'auth-user-dropdown'
+            )) {
+                dropdown.style.display = 'block';
+            }
+        } else {
+            for (dropdown of document.getElementsByClassName(
+                'auth-user-dropdown'
+            )) {
+                dropdown.style.display = 'none';
+            }
+        }
+    }
+};
 // Main
 
 let Main = ``;
@@ -473,7 +528,7 @@ function switchPage(page) {
                             id="password"
                             placeholder="Password here"
                         />
-                        <button onclick="login()" class="auth-submit">Submit</button>
+                        <button onclick="login()" class="auth-submit">Login</button>
                     </div>
                 </main>
             `;
@@ -526,7 +581,7 @@ function switchPage(page) {
                             id="password"
                             placeholder="Password here"
                         />
-                        <button onclick="register()" class="auth-submit">Submit</button>
+                        <button onclick="register()" class="auth-submit">Register</button>
                     </div>
                 </main>
                 `;
