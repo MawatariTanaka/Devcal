@@ -22,7 +22,7 @@ var posts = [
             mainPicPosition: `right center`,
             mainPicSize: `cover`,
         },
-        subTitle: `When people think about maths, they often think about repetitive equations or difficult
+        subTitle: `When people think about maths, they often think about repetitive equations or difficult
         geometry. Read the post to find if these are the only parts of mathematic.`,
         paragraph: `
             <h2 id="selected-h2">Is there creativity in mathematics?</h2>
@@ -436,7 +436,15 @@ function switchPage(page) {
                 `;
             break;
         case 'quiz':
-            Main = ``;
+            Main = `
+            <main class="quiz-container">
+                <div class="quiz-question">What is the correct value of 1 + 1?</div>
+                <div class="quiz-answer">2</div>
+                <div class="quiz-answer">11</div>
+                <div class="quiz-answer">1</div>
+                <div class="quiz-answer">10</div>
+            </main>
+            `;
             break;
         case 'about':
             Main = `
